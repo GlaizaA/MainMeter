@@ -52,10 +52,13 @@
     <deprecated>false</deprecated>
     <description>A record of a message that was sent via iContact. Used for tracking statistics.</description>
     <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Body_HTML__c</fullName>
         <deprecated>false</deprecated>

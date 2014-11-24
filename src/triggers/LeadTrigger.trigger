@@ -14,7 +14,5 @@ trigger LeadTrigger on Lead (before insert) {
    */
    
    // Must be named LeadInsert
-   
-   LeadTriggerManager.updateTerritoryName(trigger.new);
-    
+   LeadTriggerManager.updateTerritoryName(trigger.new);   
 }

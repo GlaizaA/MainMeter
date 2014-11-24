@@ -49,10 +49,13 @@
     <deprecated>false</deprecated>
     <description>This is a temporary table to hold recipients of an iContact message.</description>
     <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>ContactId__c</fullName>
         <deprecated>false</deprecated>

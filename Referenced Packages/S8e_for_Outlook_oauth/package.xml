@@ -19,5 +19,5 @@
         </module>
     </modules>
     <namespacePrefix>sf_com_apps</namespacePrefix>
-    <version>30.0</version>
+    <version>31.0</version>
 </Package>

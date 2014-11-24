@@ -57,9 +57,12 @@
     <deprecated>false</deprecated>
     <description>A set of parameters used for integrating a BigMachines site to this Salesforce org.</description>
     <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>API_Login__c</fullName>
         <deprecated>false</deprecated>

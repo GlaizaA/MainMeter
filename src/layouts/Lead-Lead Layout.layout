@@ -25,16 +25,8 @@
                 <field>Industry</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Sub_Industry__c</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Required</behavior>
                 <field>Organization_Type__c</field>
-            </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Sub_Organization_Type__c</field>
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>

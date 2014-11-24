@@ -50,10 +50,13 @@
     <deprecated>false</deprecated>
     <description>Contains the statistics for an individual message recipient from iContact.</description>
     <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Bounced__c</fullName>
         <deprecated>false</deprecated>

@@ -49,10 +49,13 @@
     <deprecated>false</deprecated>
     <description>Tracking (hidden) object to track system-wide averages for campaign open / click / bounce rates, etc. Used to generate the bars on the bullet charts on the message send detail page.</description>
     <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Average_Bounce_Rate__c</fullName>
         <deprecated>false</deprecated>

@@ -50,10 +50,13 @@
     <deprecated>false</deprecated>
     <description>Object that stores the iContact API Connection endpoint information.</description>
     <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>API_AppID__c</fullName>
         <deprecated>false</deprecated>
