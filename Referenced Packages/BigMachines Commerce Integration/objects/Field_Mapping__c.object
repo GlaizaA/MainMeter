@@ -51,9 +51,12 @@
     <deprecated>false</deprecated>
     <description>An object used to associate a field in BigMachines to a field in Salesforce.</description>
     <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
     <fields>
         <fullName>Configuration_Record__c</fullName>
         <deprecated>false</deprecated>

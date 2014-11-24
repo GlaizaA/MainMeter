@@ -1,3 +1,3 @@
-trigger LeadUpdate on Lead (before update) {
-    LeadTriggerManager.updateTerritoryName(trigger.new);
+trigger LeadUpdate on Lead (before update) {	
+    LeadTriggerManager.updateTerritoryName(trigger.new);    
 }

@@ -14,6 +14,10 @@
             <start>206.80.45.176</start>
         </ipRanges>
         <ipRanges>
+            <end>125.252.68.93</end>
+            <start>125.252.68.93</start>
+        </ipRanges>
+        <ipRanges>
             <end>125.252.68.91</end>
             <start>125.252.68.91</start>
         </ipRanges>

@@ -8,22 +8,5 @@
         <plural>true</plural>
         <value>Authorized Products</value>
     </caseValues>
-    <fields>
-        <label><!-- Account --></label>
-        <name>Account__c</name>
-        <relationshipLabel><!-- Authorized Products --></relationshipLabel>
-    </fields>
-    <fields>
-        <label><!-- Commission Rate --></label>
-        <name>Commission_Rate__c</name>
-    </fields>
-    <fields>
-        <label><!-- Exception/Notes --></label>
-        <name>Exception_Notes__c</name>
-    </fields>
-    <fields>
-        <label><!-- Product Line --></label>
-        <name>Product_Line__c</name>
-    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
