@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Opportunity Competitor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Opportunity Competitors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Use Serviced --></label>
+        <name>Application_Use_Serviced__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Name --></label>
+        <name>Competitor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Type --></label>
+        <name>Competitor_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor --></label>
+        <name>Competitor__c</name>
+        <relationshipLabel><!-- Opportunity Competitors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Specific Information --></label>
+        <name>Opportunity_Specific_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Opportunity Competitors --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Categories Available --></label>
+        <name>Product_Categories_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strengths --></label>
+        <name>Strengths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Markets --></label>
+        <name>Target_Markets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weaknesses --></label>
+        <name>Weaknesses__c</name>
+    </fields>
+    <layouts>
+        <layout>Opportunity Competitor Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- General Competitor Information --></label>
+            <section>General Competitor Information</section>
+        </sections>
+        <sections>
+            <label><!-- Information (Hidden) --></label>
+            <section>Information (Hidden)</section>
+        </sections>
+    </layouts>
+    <startsWith>Vowel</startsWith>
+    <webLinks>
+        <label><!-- Google_Maps --></label>
+        <name>Google_Maps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Google_News --></label>
+        <name>Google_News</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Google_Search --></label>
+        <name>Google_Search</name>
+    </webLinks>
+</CustomObjectTranslation>

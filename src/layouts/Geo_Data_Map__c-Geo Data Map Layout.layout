@@ -54,6 +54,10 @@
                 <behavior>Edit</behavior>
                 <field>Uterritory_Name__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Population_for_Zip__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

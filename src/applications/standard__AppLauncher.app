@@ -4,4 +4,5 @@
     <tab>standard-AppLauncher</tab>
     <tab>Account_Relationship__c</tab>
     <tab>Geo_Data_Map__c</tab>
+    <tab>Competitor__c</tab>
 </CustomApplication>

@@ -126,6 +126,7 @@
     <tab>standard-LiveAgent</tab>
     <tab>Account_Relationship__c</tab>
     <tab>Geo_Data_Map__c</tab>
+    <tab>Competitor__c</tab>
     <workspaceMappings>
         <mapping>
             <fieldName>AccountId</fieldName>
@@ -137,6 +138,9 @@
         </mapping>
         <mapping>
             <tab>standard-LiveAgent</tab>
+        </mapping>
+        <mapping>
+            <tab>Competitor__c</tab>
         </mapping>
         <mapping>
             <fieldName>AccountId</fieldName>

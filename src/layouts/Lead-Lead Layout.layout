@@ -32,6 +32,10 @@
                 <behavior>Edit</behavior>
                 <field>Territory_Name_2__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Population_Threshold__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

@@ -1,5 +1,7 @@
 public class LeadTriggerManager {
 
+    static Integer THRESHOLD = 16000;
+    
     public static void updateTerritoryName (List<Lead> leadList) {
        
            String FlowId = '';
@@ -35,6 +37,8 @@ public class LeadTriggerManager {
                          ld.Uterritory2__c = GDM_Map.get(ld.PostalCode).Uterritory_2__c;
                          ld.UTerritory_Name__c = GDM_Map.get(ld.PostalCode).Uterritory_Name__c;
                       }
+                      // call updatePopulationThreshold
+                      ld.Population_Threshold__c = updatePopulationThresholdByZipCode(ld, ld.PostalCode);
                    } else if (!GDM_Map.containsKey(ld.PostalCode)){ // if incorrect postalCode
                        ld.addError('Invalid Postal Code.');
                    } else {
@@ -45,7 +49,7 @@ public class LeadTriggerManager {
         
             if(cityList.size() > 0){ 
                 Map<string, Geo_Data_Map__c> GDM_Map_City = new map<string, Geo_Data_Map__c>();
-                for (Geo_Data_Map__c g :[SELECT Id, City__c, State__c, Flow_Territory__c, Uterritory_2__c, Uterritory_Name__c
+                for (Geo_Data_Map__c g :[SELECT Id, City__c, State__c, Flow_Territory__c, Uterritory_2__c, Uterritory_Name__c, Population_for_Zip__c
                                           FROM Geo_Data_Map__c
                                          WHERE City__c in :cityList]) {
                 
@@ -61,7 +65,7 @@ public class LeadTriggerManager {
                 
                 String currentState='';
                 for (Lead ld : leadList) {
-                    System.debug(ld.City+':'+ld.State+'::'+ld.PostalCode);
+                    // System.debug(ld.City+':'+ld.State+'::'+ld.PostalCode);
                     if(ld.PostalCode==null && ld.City != null && ld.State != null){
                         if (ld.RecordTypeId == FlowId && GDM_Map_City.size() > 0) {
                             currentState = GDM_Map_City.get(ld.City).State__c;
@@ -78,10 +82,43 @@ public class LeadTriggerManager {
                             }
                             
                         }
+                        // populate checkbox here
+                        ld.Population_Threshold__c = updatePopulationThresholdByCityState(ld, ld.City, ld.State);
                     }
                 }
             }
         
     }
     
+     
+    // This will be called every insert and update of Lead record 
+    public static boolean updatePopulationThresholdByZipCode(Lead ld, String addressZipCode){
+        // get population value from geodatamap object
+        List<Geo_Data_Map__c> geodatamapList = [SELECT Id, Zip_Code__c, Population_for_Zip__c FROM Geo_Data_Map__c WHERE Zip_Code__c =:addressZipCode];
+        if(geodatamapList.size() > 1) {
+            ld.addError('More than 2 state has the same zip code.');
+        } else {
+            // populate Population_Threshold__c based on state's population
+            if(geodatamapList.get(0).Population_for_Zip__c >= THRESHOLD) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
+    }
+    
+    public static boolean updatePopulationThresholdByCityState(Lead ld, String city, String state){
+        List<Geo_Data_Map__c> geodatamapList = [SELECT Id, City__c, State__c, Population_for_Zip__c FROM Geo_Data_Map__c WHERE City__c=:city and State__c=:state];
+        if(geodatamapList.size() > 1) {
+            ld.addError('More than 2 record has the same state and city pair.');
+        } else {
+            if(geodatamapList.get(0).Population_for_Zip__c >= THRESHOLD) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        return false;
+    }
 }

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Competitor</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Competitors</value>
+    </caseValues>
+    <fields>
+        <label><!-- Application Use Serviced --></label>
+        <name>Application_Use_Serviced__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Description --></label>
+        <name>Company_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Type --></label>
+        <name>Competitor_Type__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flow Instrumentation</masterLabel>
+            <translation><!-- Flow Instrumentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility</masterLabel>
+            <translation><!-- Utility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Categories Available --></label>
+        <name>Product_Categories_Available__c</name>
+        <picklistValues>
+            <masterLabel>Automotive Fluid Products</masterLabel>
+            <translation><!-- Automotive Fluid Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BEACON AMA</masterLabel>
+            <translation><!-- BEACON AMA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blancett</masterLabel>
+            <translation><!-- Blancett --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concrete Fluid Products</masterLabel>
+            <translation><!-- Concrete Fluid Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coriolis</masterLabel>
+            <translation><!-- Coriolis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cox</masterLabel>
+            <translation><!-- Cox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Acquisition / Management</masterLabel>
+            <translation><!-- Data Acquisition / Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dynasonics</masterLabel>
+            <translation><!-- Dynasonics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E-Series Electronic</masterLabel>
+            <translation><!-- E-Series Electronic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flo-Tech</masterLabel>
+            <translation><!-- Flo-Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flow Dynamics Calibration Services</masterLabel>
+            <translation><!-- Flow Dynamics Calibration Services --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flow Dynamics Calibrator Products</masterLabel>
+            <translation><!-- Flow Dynamics Calibrator Products --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Galaxy</masterLabel>
+            <translation><!-- Galaxy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR-E</masterLabel>
+            <translation><!-- HR-E --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hedland</masterLabel>
+            <translation><!-- Hedland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Impeller</masterLabel>
+            <translation><!-- Impeller --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial Oval Gear (IOG)</masterLabel>
+            <translation><!-- Industrial Oval Gear (IOG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial Turbo</masterLabel>
+            <translation><!-- Industrial Turbo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ModMAG M-Series</masterLabel>
+            <translation><!-- ModMAG M-Series --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitors / Accessories</masterLabel>
+            <translation><!-- Monitors / Accessories --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ORION</masterLabel>
+            <translation><!-- ORION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preso</masterLabel>
+            <translation><!-- Preso --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ReadCenter</masterLabel>
+            <translation><!-- ReadCenter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recordall</masterLabel>
+            <translation><!-- Recordall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Research Control Valves (RCV)</masterLabel>
+            <translation><!-- Research Control Valves (RCV) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Services/Technical Field Support</masterLabel>
+            <translation><!-- Services/Technical Field Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vision</masterLabel>
+            <translation><!-- Vision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vortex</masterLabel>
+            <translation><!-- Vortex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wyco Tool</masterLabel>
+            <translation><!-- Wyco Tool --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street Address --></label>
+        <name>Street_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strengths --></label>
+        <name>Strengths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Markets --></label>
+        <name>Target_Markets__c</name>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Weaknesses --></label>
+        <name>Weaknesses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip Code --></label>
+        <name>Zip_Code__c</name>
+    </fields>
+    <layouts>
+        <layout>Competitor Layout</layout>
+        <sections>
+            <label><!-- Additional Information --></label>
+            <section>Additional Information</section>
+        </sections>
+        <sections>
+            <label><!-- Address &amp; Contact Information --></label>
+            <section>Address &amp; Contact Information</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Information (Hidden) --></label>
+            <section>Information (Hidden)</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+    <webLinks>
+        <label><!-- Google_Maps --></label>
+        <name>Google_Maps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Google_News --></label>
+        <name>Google_News</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Google_Search --></label>
+        <name>Google_Search</name>
+    </webLinks>
+</CustomObjectTranslation>

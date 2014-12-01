@@ -1,5 +1,4 @@
-trigger LeadUpdate on Lead (before update) {	
-	
-    LeadTriggerManager.updateTerritoryName(trigger.new);
-        
+trigger LeadUpdate on Lead (before update) {    
+    // test sandbox
+    LeadTriggerManager.updateTerritoryName(trigger.new);    
 }

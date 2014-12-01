@@ -8,5 +8,13 @@
         <plural>true</plural>
         <value>SystemIds</value>
     </caseValues>
+    <fields>
+        <label><!-- Badger Meter Sales --></label>
+        <name>Badger_Meter_Sales__c</name>
+    </fields>
+    <fields>
+        <label><!-- Domain --></label>
+        <name>Domain__c</name>
+    </fields>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
