@@ -39,6 +39,7 @@ public class LeadTriggerManagerTest {
         g1.Uterritory_2__c = 'MN1';
         g1.UAccount_Manager__c = 'Mike McNabb';
         g1.Uterritory_Name__c = 'Central';
+        g1.Population_for_Zip__c = 3000;
         insert g1;
         
         Geo_Data_Map__c g2 = new Geo_Data_Map__c();
@@ -53,6 +54,7 @@ public class LeadTriggerManagerTest {
         g2.Uterritory_2__c = 'IA1';
         g2.UAccount_Manager__c = 'Mike McNabb';
         g2.Uterritory_Name__c = 'Central';
+        g2.Population_for_Zip__c = 10000;
         insert g2;
         
         Geo_Data_Map__c g3 = new Geo_Data_Map__c();
@@ -67,6 +69,7 @@ public class LeadTriggerManagerTest {
         g3.Uterritory_2__c = 'MA1';
         g3.UAccount_Manager__c = 'Dan Johnson';
         g3.Uterritory_Name__c = 'East';
+        g3.Population_for_Zip__c = 16000;
         insert g3;
         
         Geo_Data_Map__c g4 = new Geo_Data_Map__c();
@@ -81,6 +84,7 @@ public class LeadTriggerManagerTest {
         g4.Uterritory_2__c = 'NC1';
         g4.UAccount_Manager__c = 'Craig Cardella';
         g4.Uterritory_Name__c = 'East';
+        g4.Population_for_Zip__c = 100;
         insert g4;
         
         // Utility Record Type
@@ -96,6 +100,7 @@ public class LeadTriggerManagerTest {
         g5.Uterritory_2__c = 'IA1';
         g5.UAccount_Manager__c = 'Mike McNabb';
         g5.Uterritory_Name__c = 'Central';
+        g5.Population_for_Zip__c = 17000;
         insert g5;
         
     }
@@ -262,6 +267,38 @@ public class LeadTriggerManagerTest {
          
          // asserts here
          System.assert(!resultL1.isSuccess());
+    }
+    
+    public static testmethod void testUpdatePopulationThresholdByZipCode(){
+        geoDataMapTestData();
+        Test.startTest();
+		List<RecordType> recordTypes = [Select Name, Id from RecordType where SObjectType = 'Lead' AND Name like 'Flow%'];
+        System.assertEquals(1, recordTypes.size());
+        
+        leadTestData(recordTypes.get(0).Id, '50430','','','', null);
+        Database.SaveResult resultL1 = Database.insert(l1, false);
+        Test.stopTest();
+        
+        System.assert(resultL1.isSuccess());
+        
+        List<Lead> checkLead = [Select id, Population_Threshold__c from Lead where PostalCode='50430'];
+        System.assertEquals(true, checkLead.get(0).Population_Threshold__c);	//populationthreshold should be checked
+    }
+    
+    public static testmethod void testUpdatePopulationThresholdByCityState(){
+        geoDataMapTestData();
+        Test.startTest();
+		List<RecordType> recordTypes = [Select Name, Id from RecordType where SObjectType = 'Lead' AND Name like 'Flow%'];
+        System.assertEquals(1, recordTypes.size());
+        
+        leadTestData(recordTypes.get(0).Id, '','United States','Oslo','Minnesota', null);
+        Database.SaveResult resultL1 = Database.insert(l1, false);
+        Test.stopTest();
+        
+        System.assert(resultL1.isSuccess());
+        
+        List<Lead> checkLead = [Select id, Population_Threshold__c from Lead where City='Oslo' and State='Minnesota'];
+        System.assertEquals(false, checkLead.get(0).Population_Threshold__c);
     }
     
 }
