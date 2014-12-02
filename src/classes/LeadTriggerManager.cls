@@ -83,7 +83,9 @@ public class LeadTriggerManager {
                             
                         }
                         // populate checkbox here
-                        ld.Population_Threshold__c = updatePopulationThresholdByCityState(ld, ld.City, ld.State);
+                        if(ld.State.equals(currentState)) {
+                            ld.Population_Threshold__c = updatePopulationThresholdByCityState(ld, ld.City, ld.State);
+                        } 
                     }
                 }
             }
