@@ -87,6 +87,10 @@
     </types>
     <types>
         <members>*</members>
+        <name>CustomField</name>
+    </types>
+    <types>
+        <members>*</members>
         <name>CustomLabels</name>
     </types>
     <types>
@@ -105,7 +109,6 @@
         <members>ContentVersion</members>
         <members>Contract</members>
         <members>ContractContactRole</members>
-        <members>DandBCompany</members>
         <members>Event</members>
         <members>ForecastingAdjustment</members>
         <members>ForecastingQuota</members>
@@ -372,10 +375,6 @@
     </types>
     <types>
         <members>*</members>
-        <name>Profile</name>
-    </types>
-    <types>
-        <members>*</members>
         <name>Queue</name>
     </types>
     <types>
@@ -430,7 +429,6 @@
         <members>Badger_Service_Reports/Total_Open_Cases_by_Rep</members>
         <members>Marketing_Services_Reports</members>
         <members>Marketing_Services_Reports/Campaign_Members</members>
-        <members>field_trip_analysis</members>
         <members>iContactforSF__iContact_Campaign_Contacts_Leads</members>
         <members>iContactforSF__iContact_Campaign_Contacts_Leads/enews_contacts_2014_07_02</members>
         <members>iContactforSF__iContact_Campaign_Contacts_Leads/hr_e_webinar</members>

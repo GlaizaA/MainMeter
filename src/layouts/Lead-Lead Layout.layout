@@ -32,10 +32,6 @@
                 <behavior>Edit</behavior>
                 <field>Territory_Name_2__c</field>
             </layoutItems>
-            <layoutItems>
-                <behavior>Edit</behavior>
-                <field>Population_Threshold__c</field>
-            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
@@ -104,6 +100,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Purchase_Timeframe__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Readonly</behavior>
+                <field>Population_Threshold__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
@@ -176,6 +176,10 @@
             <layoutItems>
                 <behavior>Edit</behavior>
                 <field>Lead_Assigned_To_Sales__c</field>
+            </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sales_Channel__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsTopToBottom</style>

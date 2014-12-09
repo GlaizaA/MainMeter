@@ -1,6 +1,6 @@
 public class LeadTriggerManager {
 
-    static Integer THRESHOLD = 16000;
+    static Integer THRESHOLD = 30000;
     
     public static void updateTerritoryName (List<Lead> leadList) {
        
@@ -36,9 +36,9 @@ public class LeadTriggerManager {
                       } else {
                          ld.Uterritory2__c = GDM_Map.get(ld.PostalCode).Uterritory_2__c;
                          ld.UTerritory_Name__c = GDM_Map.get(ld.PostalCode).Uterritory_Name__c;
+                         // call updatePopulationThreshold
+                          ld.Population_Threshold__c = updatePopulationThresholdByZipCode(ld, ld.PostalCode);
                       }
-                      // call updatePopulationThreshold
-                      ld.Population_Threshold__c = updatePopulationThresholdByZipCode(ld, ld.PostalCode);
                    } else if (!GDM_Map.containsKey(ld.PostalCode)){ // if incorrect postalCode
                        ld.addError('Invalid Postal Code.');
                    } else {
@@ -80,12 +80,11 @@ public class LeadTriggerManager {
                                     ld.UTerritory_Name__c = GDM_Map_City.get(ld.City).Uterritory_Name__c;
                                 }  // else as blank
                             }
-                            
+                            // populate checkbox here
+                            if(ld.State.equals(currentState)) {
+                                ld.Population_Threshold__c = updatePopulationThresholdByCityState(ld, ld.City, ld.State);
+                            } 
                         }
-                        // populate checkbox here
-                        if(ld.State.equals(currentState)) {
-                            ld.Population_Threshold__c = updatePopulationThresholdByCityState(ld, ld.City, ld.State);
-                        } 
                     }
                 }
             }

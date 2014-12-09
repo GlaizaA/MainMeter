@@ -47,6 +47,16 @@
         <triggerType>onAllChanges</triggerType>
     </rules>
     <rules>
+        <fullName>Follow Up with Utility Lead - Sales Channel</fullName>
+        <actions>
+            <name>Follow_Up_with_Lead_Assigned_to_Sales_Channel</name>
+            <type>Task</type>
+        </actions>
+        <active>true</active>
+        <formula>NOT(ISBLANK(Sales_Channel__c))</formula>
+        <triggerType>onCreateOrTriggeringUpdate</triggerType>
+    </rules>
+    <rules>
         <fullName>Lead Rating Warm</fullName>
         <actions>
             <name>Update_to_Hot</name>
@@ -102,4 +112,14 @@
         </criteriaItems>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
+    <tasks>
+        <fullName>Follow_Up_with_Lead_Assigned_to_Sales_Channel</fullName>
+        <assignedToType>owner</assignedToType>
+        <dueDateOffset>5</dueDateOffset>
+        <notifyAssignee>false</notifyAssignee>
+        <priority>Normal</priority>
+        <protected>false</protected>
+        <status>Not Started</status>
+        <subject>Follow Up with Lead Assigned to Sales Channel</subject>
+    </tasks>
 </Workflow>

@@ -440,13 +440,11 @@
     </fields>
     <fields>
         <fullName>Key_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Key Contact</label>
-        <length>50</length>
-        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>LastCURequestDate</fullName>
@@ -549,6 +547,16 @@
         </picklist>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Load_File__c</fullName>
+        <externalId>false</externalId>
+        <label>Load File</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>MailingAddress</fullName>
@@ -777,6 +785,34 @@
         <filterScope>Everything</filterScope>
         <label>All Contacts</label>
         <language>en_US</language>
+    </listViews>
+    <listViews>
+        <fullName>Data_Loader</fullName>
+        <columns>Data_Loader_ID__c</columns>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>ACCOUNT.ACCOUNT_ID</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>DM_C_External_ID__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Data Loader</label>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
     </listViews>
     <searchLayouts>
         <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>

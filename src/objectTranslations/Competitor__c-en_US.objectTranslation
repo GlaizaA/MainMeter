@@ -21,44 +21,8 @@
         <name>Company_Description__c</name>
     </fields>
     <fields>
-        <label><!-- Competitor Type --></label>
-        <name>Competitor_Type__c</name>
-        <picklistValues>
-            <masterLabel>Both</masterLabel>
-            <translation><!-- Both --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Flow Instrumentation</masterLabel>
-            <translation><!-- Flow Instrumentation --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Unknown</masterLabel>
-            <translation><!-- Unknown --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Utility</masterLabel>
-            <translation><!-- Utility --></translation>
-        </picklistValues>
-    </fields>
-    <fields>
-        <label><!-- Email --></label>
-        <name>Email__c</name>
-    </fields>
-    <fields>
-        <label><!-- Fax --></label>
-        <name>Fax__c</name>
-    </fields>
-    <fields>
-        <label><!-- Phone --></label>
-        <name>Phone__c</name>
-    </fields>
-    <fields>
-        <label><!-- Primary Contact --></label>
-        <name>Primary_Contact__c</name>
-    </fields>
-    <fields>
-        <label><!-- Product Categories Available --></label>
-        <name>Product_Categories_Available__c</name>
+        <label><!-- Competing Products --></label>
+        <name>Competing_Products__c</name>
         <picklistValues>
             <masterLabel>Automotive Fluid Products</masterLabel>
             <translation><!-- Automotive Fluid Products --></translation>
@@ -177,6 +141,42 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Competitor Type --></label>
+        <name>Competitor_Type__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flow Instrumentation</masterLabel>
+            <translation><!-- Flow Instrumentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility</masterLabel>
+            <translation><!-- Utility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Primary Contact --></label>
+        <name>Primary_Contact__c</name>
+    </fields>
+    <fields>
         <label><!-- State --></label>
         <name>State__c</name>
     </fields>
@@ -192,8 +192,68 @@
         <label><!-- Target Markets --></label>
         <name>Target_Markets__c</name>
         <picklistValues>
-            <masterLabel>TBD</masterLabel>
-            <translation><!-- TBD --></translation>
+            <masterLabel>Aerospace</masterLabel>
+            <translation><!-- Aerospace --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chemical/Petrochemical</masterLabel>
+            <translation><!-- Chemical/Petrochemical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial/HVAC</masterLabel>
+            <translation><!-- Commercial/HVAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Concrete Redi-mix</masterLabel>
+            <translation><!-- Concrete Redi-mix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Energy/Oil &amp; Gas</masterLabel>
+            <translation><!-- Energy/Oil &amp; Gas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gas</masterLabel>
+            <translation><!-- Gas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Industrial</masterLabel>
+            <translation><!-- Industrial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Irrigation/Agriculture</masterLabel>
+            <translation><!-- Irrigation/Agriculture --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pavement - Concrete</masterLabel>
+            <translation><!-- Pavement - Concrete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Process Automation &amp; Control</masterLabel>
+            <translation><!-- Process Automation &amp; Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Test &amp; Measurement</masterLabel>
+            <translation><!-- Test &amp; Measurement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Utility</masterLabel>
+            <translation><!-- Utility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Water</masterLabel>
+            <translation><!-- Water --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Water + Gas</masterLabel>
+            <translation><!-- Water + Gas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Water/Wastewater Treatment</masterLabel>
+            <translation><!-- Water/Wastewater Treatment --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -215,16 +275,16 @@
             <section>Additional Information</section>
         </sections>
         <sections>
-            <label><!-- Address &amp; Contact Information --></label>
-            <section>Address &amp; Contact Information</section>
-        </sections>
-        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
         </sections>
         <sections>
             <label><!-- Information (Hidden) --></label>
             <section>Information (Hidden)</section>
+        </sections>
+        <sections>
+            <label><!-- Primary Address &amp; Contact Information --></label>
+            <section>Primary Address &amp; Contact Information</section>
         </sections>
     </layouts>
     <startsWith>Consonant</startsWith>

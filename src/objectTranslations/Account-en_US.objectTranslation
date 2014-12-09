@@ -276,6 +276,19 @@
         <name>Comments__c</name>
     </fields>
     <fields>
+        <help><!-- This field designates if the commission lies with Badger Meter or the Sales Channel --></help>
+        <label><!-- Commission --></label>
+        <name>Commission__c</name>
+        <picklistValues>
+            <masterLabel>Badger Meter</masterLabel>
+            <translation><!-- Badger Meter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Channel</masterLabel>
+            <translation><!-- Sales Channel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Competitive Account --></label>
         <name>Competitive_Account__c</name>
     </fields>
@@ -543,68 +556,28 @@
         <label><!-- Organization Type --></label>
         <name>Organization_Type__c</name>
         <picklistValues>
-            <masterLabel>Alliance Partner</masterLabel>
-            <translation><!-- Alliance Partner --></translation>
+            <masterLabel>Instrumentation Customer (IC)</masterLabel>
+            <translation><!-- Instrumentation Customer (IC) --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Catalog House/Internet Reseller</masterLabel>
-            <translation><!-- Catalog House/Internet Reseller --></translation>
+            <masterLabel>Instrumentation Other</masterLabel>
+            <translation><!-- Instrumentation Other --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Contractor</masterLabel>
-            <translation><!-- Contractor --></translation>
+            <masterLabel>Instrumentation Representative (IR)</masterLabel>
+            <translation><!-- Instrumentation Representative (IR) --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Engineering Firm</masterLabel>
-            <translation><!-- Engineering Firm --></translation>
+            <masterLabel>Utility Customer (UC)</masterLabel>
+            <translation><!-- Utility Customer (UC) --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Flow Instrumentation Distributor</masterLabel>
-            <translation><!-- Flow Instrumentation Distributor --></translation>
+            <masterLabel>Utility Distributor (UD)</masterLabel>
+            <translation><!-- Utility Distributor (UD) --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>Flow Instrumentation Representative</masterLabel>
-            <translation><!-- Flow Instrumentation Representative --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Installation Firm</masterLabel>
-            <translation><!-- Installation Firm --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Machine/Skid Builder</masterLabel>
-            <translation><!-- Machine/Skid Builder --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>OEM – Private Label</masterLabel>
-            <translation><!-- OEM – Private Label --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Other</masterLabel>
-            <translation><!-- Other --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Rockwell Automation – Direct</masterLabel>
-            <translation><!-- Rockwell Automation – Direct --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Rockwell Automation – Distributor</masterLabel>
-            <translation><!-- Rockwell Automation – Distributor --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>System Integrator</masterLabel>
-            <translation><!-- System Integrator --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>UD - Distributor (Channel Partner)</masterLabel>
-            <translation><!-- UD - Distributor (Channel Partner) --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Utility Customer</masterLabel>
-            <translation><!-- Utility Customer --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>Utility Distributor</masterLabel>
-            <translation><!-- Utility Distributor --></translation>
+            <masterLabel>Utility Other (DC)</masterLabel>
+            <translation><!-- Utility Other (DC) --></translation>
         </picklistValues>
     </fields>
     <fields>
@@ -1282,6 +1255,10 @@
     <layouts>
         <layout>Account - Distributor Layout</layout>
         <sections>
+            <label><!-- Account Information (Hidden) --></label>
+            <section>Account Information (Hidden)</section>
+        </sections>
+        <sections>
             <label><!-- Additional Details --></label>
             <section>Additional Details</section>
         </sections>
@@ -1290,16 +1267,16 @@
             <section>Address</section>
         </sections>
         <sections>
-            <label><!-- Bid/BMI Address --></label>
-            <section>Bid/BMI Address</section>
-        </sections>
-        <sections>
-            <label><!-- Contract/Corporate Address --></label>
-            <section>Contract/Corporate Address</section>
-        </sections>
-        <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Data Integration\Migration Information --></label>
+            <section>Data Integration\Migration Information</section>
+        </sections>
+        <sections>
+            <label><!-- Demographic Information --></label>
+            <section>Demographic Information</section>
         </sections>
         <sections>
             <label><!-- Description --></label>
@@ -1312,14 +1289,6 @@
         <sections>
             <label><!-- Financial --></label>
             <section>Financial</section>
-        </sections>
-        <sections>
-            <label><!-- Inactive Address --></label>
-            <section>Inactive Address</section>
-        </sections>
-        <sections>
-            <label><!-- Quote/Home Office Address --></label>
-            <section>Quote/Home Office Address</section>
         </sections>
     </layouts>
     <layouts>
@@ -1376,6 +1345,10 @@
             <section>Custom Links</section>
         </sections>
         <sections>
+            <label><!-- Data Migration\Data Integration Information --></label>
+            <section>Data Migration\Data Integration Information</section>
+        </sections>
+        <sections>
             <label><!-- Description --></label>
             <section>Description</section>
         </sections>
@@ -1401,6 +1374,10 @@
         <sections>
             <label><!-- Custom Links --></label>
             <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label><!-- Data Migration\Integration Information --></label>
+            <section>Data Migration\Integration Information</section>
         </sections>
         <sections>
             <label><!-- Description --></label>

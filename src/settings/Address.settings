@@ -1460,6 +1460,15 @@
         </countries>
         <countries>
             <active>true</active>
+            <integrationValue>Guam</integrationValue>
+            <isoCode>GU</isoCode>
+            <label>Guam</label>
+            <orgDefault>false</orgDefault>
+            <standard>false</standard>
+            <visible>true</visible>
+        </countries>
+        <countries>
+            <active>true</active>
             <integrationValue>Guinea-Bissau</integrationValue>
             <isoCode>GW</isoCode>
             <label>Guinea-Bissau</label>
@@ -1474,6 +1483,15 @@
             <label>Guyana</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <visible>true</visible>
+        </countries>
+        <countries>
+            <active>true</active>
+            <integrationValue>Hongkong</integrationValue>
+            <isoCode>HK</isoCode>
+            <label>Hongkong</label>
+            <orgDefault>false</orgDefault>
+            <standard>false</standard>
             <visible>true</visible>
         </countries>
         <countries>
@@ -3269,6 +3287,15 @@
         </countries>
         <countries>
             <active>true</active>
+            <integrationValue>Marshall Islands</integrationValue>
+            <isoCode>MH</isoCode>
+            <label>Marshall Islands</label>
+            <orgDefault>false</orgDefault>
+            <standard>false</standard>
+            <visible>true</visible>
+        </countries>
+        <countries>
+            <active>true</active>
             <integrationValue>Macedonia, the former Yugoslav Republic of</integrationValue>
             <isoCode>MK</isoCode>
             <label>Macedonia, the former Yugoslav Republic of</label>
@@ -3310,6 +3337,15 @@
             <label>Macao</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <visible>true</visible>
+        </countries>
+        <countries>
+            <active>true</active>
+            <integrationValue>Northern Mariana Islands</integrationValue>
+            <isoCode>MP</isoCode>
+            <label>Northern Mariana Islands</label>
+            <orgDefault>false</orgDefault>
+            <standard>false</standard>
             <visible>true</visible>
         </countries>
         <countries>
@@ -3854,6 +3890,15 @@
             <label>Pitcairn</label>
             <orgDefault>false</orgDefault>
             <standard>true</standard>
+            <visible>true</visible>
+        </countries>
+        <countries>
+            <active>true</active>
+            <integrationValue>Puerto Rico</integrationValue>
+            <isoCode>PR</isoCode>
+            <label>Puerto Rico</label>
+            <orgDefault>false</orgDefault>
+            <standard>false</standard>
             <visible>true</visible>
         </countries>
         <countries>

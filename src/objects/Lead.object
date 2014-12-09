@@ -209,12 +209,12 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
     </fields>
-    <fields>
+    <!--<fields>
         <fullName>DandbCompanyId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Lookup</type>
-    </fields>
+    </fields>-->
     <fields>
         <fullName>Days_Since_Last_Activity_Update__c</fullName>
         <externalId>false</externalId>
@@ -634,7 +634,8 @@
         <defaultValue>false</defaultValue>
         <description>Population reached the threshold.</description>
         <externalId>false</externalId>
-        <label>Population Threshold</label>
+        <inlineHelpText>This is only for Utility based leads to determine Opportunity assignment.</inlineHelpText>
+        <label>Over Population Threshold?</label>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
@@ -864,6 +865,19 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Channel__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Sales Channel</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Assigned Leads</relationshipLabel>
+        <relationshipName>Assigned_Leads</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Sales_Territory__c</fullName>
@@ -1355,15 +1369,16 @@
         <fullName>All_Leads</fullName>
         <columns>FULL_NAME</columns>
         <columns>LEAD.COMPANY</columns>
-        <columns>LEAD.STATE</columns>
+        <columns>LEAD.CITY</columns>
+        <columns>LEAD.STATE_CODE</columns>
         <columns>LEAD.PHONE</columns>
         <columns>LEAD.EMAIL</columns>
         <columns>LEAD.LEAD_SOURCE</columns>
+        <columns>LEAD.STATUS</columns>
         <columns>LEAD.RATING</columns>
         <columns>Product__c</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <columns>LEAD.CREATED_DATE</columns>
-        <columns>LEAD.COUNTRY</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>FULL_NAME</field>

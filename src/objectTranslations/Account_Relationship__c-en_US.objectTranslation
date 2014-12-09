@@ -9,6 +9,14 @@
         <value>Account Relationships</value>
     </caseValues>
     <fields>
+        <label><!-- DM A External ID --></label>
+        <name>DM_A_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Customer Name --></label>
+        <name>End_Customer_Name__c</name>
+    </fields>
+    <fields>
         <label><!-- Partner 1 --></label>
         <name>Partner_1__c</name>
         <relationshipLabel><!-- Account Relationships --></relationshipLabel>

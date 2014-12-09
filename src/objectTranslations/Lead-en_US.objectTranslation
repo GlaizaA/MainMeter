@@ -363,7 +363,8 @@
         </picklistValues>
     </fields>
     <fields>
-        <label><!-- Population Threshold --></label>
+        <help><!-- This is only for Utility based leads to determine Opportunity assignment. --></help>
+        <label><!-- Over Population Threshold? --></label>
         <name>Population_Threshold__c</name>
     </fields>
     <fields>
@@ -549,6 +550,11 @@
     <fields>
         <label><!-- SIC Description --></label>
         <name>SIC_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Channel --></label>
+        <name>Sales_Channel__c</name>
+        <relationshipLabel><!-- Assigned Leads --></relationshipLabel>
     </fields>
     <fields>
         <label><!-- Sales Territory --></label>
@@ -954,4 +960,8 @@
         <label><!-- YahooMaps --></label>
         <name>YahooMaps</name>
     </webLinks>
+    <workflowTasks>
+        <name>Follow_Up_with_Lead_Assigned_to_Sales_Channel</name>
+        <subject><!-- Follow Up with Lead Assigned to Sales Channel --></subject>
+    </workflowTasks>
 </CustomObjectTranslation>

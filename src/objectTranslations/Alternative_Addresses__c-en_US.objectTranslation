@@ -22,8 +22,16 @@
         <name>Address_Line_2__c</name>
     </fields>
     <fields>
+        <label><!-- Address Type --></label>
+        <name>Address_Type__c</name>
+    </fields>
+    <fields>
         <label><!-- Attn --></label>
         <name>Attn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Channel Type --></label>
+        <name>Channel_Type__c</name>
     </fields>
     <fields>
         <label><!-- City --></label>
@@ -32,6 +40,14 @@
     <fields>
         <label><!-- Country --></label>
         <name>Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- DM_ADR_External_ID --></label>
+        <name>DM_ADR_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Loader ID --></label>
+        <name>Data_Loader_ID__c</name>
     </fields>
     <fields>
         <label><!-- Data Source --></label>
@@ -64,6 +80,26 @@
             <masterLabel>TDF</masterLabel>
             <translation><!-- TDF --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fax --></label>
+        <name>Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Load File --></label>
+        <name>Load_File__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
     </fields>
     <fields>
         <label><!-- Ship To Number --></label>

@@ -84,10 +84,31 @@
         <type>TextArea</type>
     </fields>
     <fields>
+        <fullName>Address_Type__c</fullName>
+        <description>The type of address from the Alt Address table in Pivotal</description>
+        <externalId>false</externalId>
+        <label>Address Type</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Attn__c</fullName>
         <externalId>false</externalId>
         <label>Attn</label>
         <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Channel_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Channel Type</label>
+        <length>40</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -108,6 +129,27 @@
         <externalId>false</externalId>
         <label>Country</label>
         <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DM_ADR_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>DM_ADR_External_ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Loader_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Loader ID</label>
+        <length>30</length>
         <required>false</required>
         <trackTrending>false</trackTrending>
         <type>Text</type>
@@ -150,6 +192,54 @@
         </picklist>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax__c</fullName>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Inactive</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Load_File__c</fullName>
+        <externalId>false</externalId>
+        <label>Load File</label>
+        <length>80</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <length>30</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Ship_To__c</fullName>
@@ -221,7 +311,7 @@
     <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>Only_1_Bill_To_per_account</fullName>
-        <active>true</active>
+        <active>false</active>
         <description>Only 1 Bill To Type is allowed per account</description>
         <errorConditionFormula>AND(  ISPICKVAL(Type__c ,&apos;Bill To&apos;) ,  Account__r.Has_Bill_To__c ==1)</errorConditionFormula>
         <errorDisplayField>Type__c</errorDisplayField>

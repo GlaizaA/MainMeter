@@ -179,7 +179,7 @@ public class LeadTriggerManagerTest {
          System.assertEquals('NC1', leadList.get(0).Uterritory2__c);
          System.assertEquals('East', leadList.get(0).UTerritory_Name__c);
      }
-	
+    
     public static testmethod void testFlowTerritoryNameWithoutZipCode(){
          geoDataMapTestData();
          
@@ -269,10 +269,11 @@ public class LeadTriggerManagerTest {
          System.assert(!resultL1.isSuccess());
     }
     
-    public static testmethod void testUpdatePopulationThresholdByZipCode(){
+    
+    public static testmethod void testUpdatePopulationThresholdByZipCodeUtility(){
         geoDataMapTestData();
         Test.startTest();
-		List<RecordType> recordTypes = [Select Name, Id from RecordType where SObjectType = 'Lead' AND Name like 'Flow%'];
+        List<RecordType> recordTypes = [Select Name, Id from RecordType where SObjectType = 'Lead' AND Name like 'Utility%'];
         System.assertEquals(1, recordTypes.size());
         
         leadTestData(recordTypes.get(0).Id, '50430','','','', null);
@@ -282,13 +283,13 @@ public class LeadTriggerManagerTest {
         System.assert(resultL1.isSuccess());
         
         List<Lead> checkLead = [Select id, Population_Threshold__c from Lead where PostalCode='50430'];
-        System.assertEquals(true, checkLead.get(0).Population_Threshold__c);	//populationthreshold should be checked
+        System.assertEquals(true, checkLead.get(0).Population_Threshold__c);    //populationthreshold should be checked
     }
     
-    public static testmethod void testUpdatePopulationThresholdByCityState(){
+    public static testmethod void testUpdatePopulationThresholdByCityStateUtility(){
         geoDataMapTestData();
         Test.startTest();
-		List<RecordType> recordTypes = [Select Name, Id from RecordType where SObjectType = 'Lead' AND Name like 'Flow%'];
+        List<RecordType> recordTypes = [Select Name, Id from RecordType where SObjectType = 'Lead' AND Name like 'Utility%'];
         System.assertEquals(1, recordTypes.size());
         
         leadTestData(recordTypes.get(0).Id, '','United States','Oslo','Minnesota', null);

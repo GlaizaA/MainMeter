@@ -49,7 +49,7 @@
     <description>This object will be used to house competitor specific information.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
-    <enableFeeds>false</enableFeeds>
+    <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
     <enableReports>true</enableReports>
     <enableSharing>true</enableSharing>
@@ -59,6 +59,7 @@
         <externalId>false</externalId>
         <label>Application Use Serviced</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -68,6 +69,7 @@
         <label>City</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -77,74 +79,14 @@
         <externalId>false</externalId>
         <label>Company Description</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
     <fields>
-        <fullName>Competitor_Type__c</fullName>
+        <fullName>Competing_Products__c</fullName>
         <externalId>false</externalId>
-        <label>Competitor Type</label>
-        <picklist>
-            <picklistValues>
-                <fullName>Flow Instrumentation</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Utility</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Both</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Unknown</fullName>
-                <default>false</default>
-            </picklistValues>
-            <sorted>false</sorted>
-        </picklist>
-        <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-    </fields>
-    <fields>
-        <fullName>Email__c</fullName>
-        <externalId>false</externalId>
-        <label>Email</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Email</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Fax__c</fullName>
-        <externalId>false</externalId>
-        <label>Fax</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Phone</type>
-    </fields>
-    <fields>
-        <fullName>Phone__c</fullName>
-        <externalId>false</externalId>
-        <label>Phone</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Phone</type>
-    </fields>
-    <fields>
-        <fullName>Primary_Contact__c</fullName>
-        <externalId>false</externalId>
-        <label>Primary Contact</label>
-        <length>255</length>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
-        <fullName>Product_Categories_Available__c</fullName>
-        <externalId>false</externalId>
-        <label>Product Categories Available</label>
+        <label>Competing Products</label>
         <picklist>
             <picklistValues>
                 <fullName>Automotive Fluid Products</fullName>
@@ -264,8 +206,76 @@
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Competitor_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Competitor Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Flow Instrumentation</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Utility</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fax__c</fullName>
+        <externalId>false</externalId>
+        <label>Fax</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Phone</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Primary_Contact__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Contact</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>State__c</fullName>
@@ -273,6 +283,7 @@
         <label>State</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -283,6 +294,7 @@
         <label>Street Address</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -292,6 +304,7 @@
         <externalId>false</externalId>
         <label>Strengths</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -300,20 +313,132 @@
         <externalId>false</externalId>
         <label>Target Markets</label>
         <picklist>
+            <controllingField>Competitor_Type__c</controllingField>
             <picklistValues>
-                <fullName>TBD</fullName>
+                <fullName>Utility</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Water</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Gas</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Water + Gas</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Aerospace</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Chemical/Petrochemical</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Commercial/HVAC</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concrete Redi-mix</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Pavement - Concrete</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Energy/Oil &amp; Gas</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Irrigation/Agriculture</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Water/Wastewater Treatment</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Process Automation &amp; Control</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Test &amp; Measurement</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <controllingFieldValues>Both</controllingFieldValues>
+                <controllingFieldValues>Flow Instrumentation</controllingFieldValues>
+                <controllingFieldValues>Unknown</controllingFieldValues>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
         </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
-        <type>Picklist</type>
+        <type>MultiselectPicklist</type>
+        <visibleLines>5</visibleLines>
     </fields>
     <fields>
         <fullName>Weaknesses__c</fullName>
         <externalId>false</externalId>
         <label>Weaknesses</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>TextArea</type>
     </fields>
@@ -322,6 +447,7 @@
         <externalId>false</externalId>
         <label>Website</label>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Url</type>
     </fields>
@@ -331,6 +457,7 @@
         <label>Zip Code</label>
         <length>255</length>
         <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
@@ -352,6 +479,7 @@
     </listViews>
     <nameField>
         <label>Competitor Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>
     </nameField>
     <pluralLabel>Competitors</pluralLabel>

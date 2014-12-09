@@ -224,6 +224,7 @@
         <columns>State__c</columns>
         <columns>Flow_Territory__c</columns>
         <columns>Flow_Regional_Sales_Manager__c</columns>
+        <columns>Population_for_Zip__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>Flow_Territory__c</field>

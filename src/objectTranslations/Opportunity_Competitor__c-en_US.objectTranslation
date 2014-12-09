@@ -17,6 +17,10 @@
         <name>Application_Use_Serviced__c</name>
     </fields>
     <fields>
+        <label><!-- Competing Products --></label>
+        <name>Competing_Products__c</name>
+    </fields>
+    <fields>
         <label><!-- Competitor Name --></label>
         <name>Competitor_Name__c</name>
     </fields>
@@ -41,10 +45,6 @@
     <fields>
         <label><!-- Primary Contact --></label>
         <name>Primary_Contact__c</name>
-    </fields>
-    <fields>
-        <label><!-- Product Categories Available --></label>
-        <name>Product_Categories_Available__c</name>
     </fields>
     <fields>
         <label><!-- Strengths --></label>

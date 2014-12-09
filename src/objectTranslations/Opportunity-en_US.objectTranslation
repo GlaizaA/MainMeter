@@ -33,6 +33,10 @@
         <name>Actual_Revenue_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Alliance Partner ID --></label>
+        <name>Alliance_Partner_ID__c</name>
+    </fields>
+    <fields>
         <label><!-- Alt1 Proposal Dollars Serv --></label>
         <name>Alt1_Proposal_Dollars_Serv__c</name>
     </fields>
@@ -101,8 +105,20 @@
         <name>Bid_Open_Date__c</name>
     </fields>
     <fields>
+        <label><!-- Bid Sales Process Opportunity ID --></label>
+        <name>Bid_Sales_Process_Opportunity_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bid Tab Received By --></label>
+        <name>Bid_Tab_Received_By__c</name>
+    </fields>
+    <fields>
         <label><!-- Bid Tab Received Date --></label>
         <name>Bid_Tab_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bid Tab Received --></label>
+        <name>Bid_Tab_Received__c</name>
     </fields>
     <fields>
         <label><!-- Line Items --></label>
@@ -111,6 +127,10 @@
     <fields>
         <label><!-- Competitor Comments --></label>
         <name>Competitor_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor ID --></label>
+        <name>Competitor_ID__c</name>
     </fields>
     <fields>
         <label><!-- Consulting Service --></label>
@@ -215,6 +235,18 @@
         <name>Estimated_Opportunity_Value__c</name>
     </fields>
     <fields>
+        <label><!-- Executive Summary By --></label>
+        <name>Executive_Summary_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive Summary Date --></label>
+        <name>Executive_Summary_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive Summary --></label>
+        <name>Executive_Summary__c</name>
+    </fields>
+    <fields>
         <label><!-- Expected Decision Date Text --></label>
         <name>Expected_Decision_Date_Text__c</name>
     </fields>
@@ -277,6 +309,14 @@
     <fields>
         <label><!-- Gas --></label>
         <name>Gas__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incumbent By --></label>
+        <name>Incumbent_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incumbent Date --></label>
+        <name>Incumbent_Date__c</name>
     </fields>
     <fields>
         <label><!-- Incumbent --></label>
@@ -380,6 +420,10 @@
             <masterLabel>Word of mouth</masterLabel>
             <translation><!-- Word of mouth --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Load File --></label>
+        <name>Load_File__c</name>
     </fields>
     <fields>
         <label><!-- Lost To Company --></label>
@@ -526,6 +570,26 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Meter Type --></label>
+        <name>Meter_Type__c</name>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial</masterLabel>
+            <translation><!-- Commercial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
         <label><!-- Need AMR --></label>
         <name>Need_AMR__c</name>
     </fields>
@@ -548,6 +612,10 @@
     <fields>
         <label><!-- Number of Water Services --></label>
         <name>Number_of_Water_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Obtain Prod App By --></label>
+        <name>Obtain_Prod_App_By__c</name>
     </fields>
     <fields>
         <label><!-- Obtain Prod App Date --></label>
@@ -955,6 +1023,14 @@
         <relationshipLabel><!-- Opportunities --></relationshipLabel>
     </fields>
     <fields>
+        <label><!-- Req Executive Summary --></label>
+        <name>Req_Executive_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Req Obtain Prod App --></label>
+        <name>Req_Obtain_Prod_App__c</name>
+    </fields>
+    <fields>
         <label><!-- Req Perform Demo --></label>
         <name>Req_Perform_Demo__c</name>
     </fields>
@@ -965,6 +1041,22 @@
     <fields>
         <label><!-- Req Send References --></label>
         <name>Req_Send_References__c</name>
+    </fields>
+    <fields>
+        <label><!-- Req Send Sample --></label>
+        <name>Req_Send_Sample__c</name>
+    </fields>
+    <fields>
+        <label><!-- Req Send Specifications --></label>
+        <name>Req_Send_Specifications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Req Subcontractor --></label>
+        <name>Req_Subcontractor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Req Valve Sizing --></label>
+        <name>Req_Valve_Sizing__c</name>
     </fields>
     <fields>
         <label><!-- Responsibility Distributor --></label>
@@ -987,12 +1079,40 @@
         <name>Schedule_1_yr_anniversary_reminder_follo__c</name>
     </fields>
     <fields>
+        <label><!-- Send References By --></label>
+        <name>Send_References_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send References Date --></label>
+        <name>Send_References_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send References --></label>
+        <name>Send_References__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Sample By --></label>
+        <name>Send_Sample_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Sample Date --></label>
+        <name>Send_Sample_Date__c</name>
+    </fields>
+    <fields>
         <label><!-- Send Sample --></label>
         <name>Send_Sample__c</name>
     </fields>
     <fields>
+        <label><!-- Send Specifications By --></label>
+        <name>Send_Specifications_By__c</name>
+    </fields>
+    <fields>
         <label><!-- Send Specifications Date --></label>
         <name>Send_Specifications_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Specifications --></label>
+        <name>Send_Specifications__c</name>
     </fields>
     <fields>
         <label><!-- Send thank you note --></label>
@@ -1013,36 +1133,24 @@
     <fields>
         <name>StageName</name>
         <picklistValues>
-            <masterLabel>0 - No Stages Started</masterLabel>
-            <translation><!-- 0 - No Stages Started --></translation>
+            <masterLabel>1 - Prospecting</masterLabel>
+            <translation><!-- 1 - Prospecting --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>1 - Top Account</masterLabel>
-            <translation><!-- 1 - Top Account --></translation>
+            <masterLabel>2 - Qualification</masterLabel>
+            <translation><!-- 2 - Qualification --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>2 - Account Qualification</masterLabel>
-            <translation><!-- 2 - Account Qualification --></translation>
+            <masterLabel>3 - Needs Analysis</masterLabel>
+            <translation><!-- 3 - Needs Analysis --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>3 - Opportunity Identification</masterLabel>
-            <translation><!-- 3 - Opportunity Identification --></translation>
+            <masterLabel>4 - Quote\Bid</masterLabel>
+            <translation><!-- 4 - Quote\Bid --></translation>
         </picklistValues>
         <picklistValues>
-            <masterLabel>4 - Technical Approval</masterLabel>
-            <translation><!-- 4 - Technical Approval --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>5 - Proposal</masterLabel>
-            <translation><!-- 5 - Proposal --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>6 - Proposal Outcome</masterLabel>
-            <translation><!-- 6 - Proposal Outcome --></translation>
-        </picklistValues>
-        <picklistValues>
-            <masterLabel>7 - Receive Order</masterLabel>
-            <translation><!-- 7 - Receive Order --></translation>
+            <masterLabel>5 - Negotiation\Review</masterLabel>
+            <translation><!-- 5 - Negotiation\Review --></translation>
         </picklistValues>
         <picklistValues>
             <masterLabel>Closed Lost</masterLabel>
@@ -1052,6 +1160,18 @@
             <masterLabel>Closed Won</masterLabel>
             <translation><!-- Closed Won --></translation>
         </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Subcontractor By --></label>
+        <name>Subcontractor_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subcontractor Date --></label>
+        <name>Subcontractor_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subcontractor --></label>
+        <name>Subcontractor__c</name>
     </fields>
     <fields>
         <label><!-- Submit Proposal By --></label>
@@ -1108,6 +1228,14 @@
     <fields>
         <label><!-- Training Service --></label>
         <name>Training_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Turnkey Complete By --></label>
+        <name>Turnkey_Complete_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Turnkey Complete --></label>
+        <name>Turnkey_Complete__c</name>
     </fields>
     <fields>
         <label><!-- Turnkey Completion Date --></label>
@@ -1173,6 +1301,18 @@
         </picklistValues>
     </fields>
     <fields>
+        <label><!-- Valve Sizing By --></label>
+        <name>Valve_Sizing_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valve Sizing Date --></label>
+        <name>Valve_Sizing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Valve Sizing --></label>
+        <name>Valve_Sizing__c</name>
+    </fields>
+    <fields>
         <label><!-- Water --></label>
         <name>Water__c</name>
     </fields>
@@ -1231,12 +1371,12 @@
             <section>Application Description Information (Hidden)</section>
         </sections>
         <sections>
-            <label><!-- Custom Links --></label>
-            <section>Custom Links</section>
+            <label><!-- Bid/Quote Information --></label>
+            <section>Bid/Quote Information</section>
         </sections>
         <sections>
-            <label><!-- Data Migration Fields --></label>
-            <section>Data Migration Fields</section>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
         </sections>
         <sections>
             <label><!-- Data Migration\Integration Information --></label>
@@ -1257,6 +1397,10 @@
         <sections>
             <label><!-- Opportunity Information (Hidden) --></label>
             <section>Opportunity Information (Hidden)</section>
+        </sections>
+        <sections>
+            <label><!-- Opprotunity (hidden) --></label>
+            <section>Opprotunity (hidden)</section>
         </sections>
     </layouts>
     <layouts>
@@ -1285,6 +1429,14 @@
     <recordTypes>
         <label><!-- Closed Opportunity --></label>
         <name>CloseOpportunity</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Flow Instrumentation --></label>
+        <name>Flow_Instrumentation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Utility --></label>
+        <name>Utility</name>
     </recordTypes>
     <webLinks>
         <label><!-- Close_Opportunity --></label>

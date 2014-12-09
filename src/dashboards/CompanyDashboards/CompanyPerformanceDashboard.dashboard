@@ -3,7 +3,7 @@
     <backgroundEndColor>#CCCCFF</backgroundEndColor>
     <backgroundFadeDirection>Diagonal</backgroundFadeDirection>
     <backgroundStartColor>#FFFFFF</backgroundStartColor>
-    <dashboardType>SpecifiedUser</dashboardType>
+    <dashboardType>LoggedInUser</dashboardType>
     <leftSection>
         <columnSize>Medium</columnSize>
         <components>

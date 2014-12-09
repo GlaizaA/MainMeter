@@ -84,6 +84,44 @@ IF(
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Competing_Products__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( INCLUDES( Competitor__r.Competing_Products__c , &quot;Automotive Fluid Products&quot;), &quot;Automotive Fluid Products, &quot;, &quot;&quot;) + 
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;BEACON AMA&quot;), &quot;BEACON AMA, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Blancett&quot;), &quot;Blancett, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Concrete Fluid Products&quot;), &quot;Concrete Fluid Products, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Coriolis&quot;), &quot;Coriolis, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Cox&quot;), &quot;Cox, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Data Acquisition / Management&quot;), &quot;Data Acquisition / Management, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Dynasonics&quot;), &quot;Dynasonics, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;E-Series Electronic&quot;), &quot;E-Series Electronic, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Flo-Tech&quot;), &quot;Flo-Tech, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Flow Dynamics Calibration Services&quot;), &quot;Flow Dynamics Calibration Services, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Flow Dynamics Calibrator Products&quot;), &quot;Flow Dynamics Calibrator Products, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Galaxy&quot;), &quot;Galaxy, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Hedland&quot;), &quot;Hedland, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;HR-E&quot;), &quot;HR-E, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Impeller&quot;), &quot;Impeller, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Industrial Oval Gear (IOG)&quot;), &quot;Industrial Oval Gear (IOG), &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Industrial Turbo&quot;), &quot;Industrial Turbo, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;ModMAG M-Series&quot;), &quot;ModMAG M-Series, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Monitors / Accessories&quot;), &quot;Monitors / Accessories, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Preso&quot;), &quot;Preso, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;ReadCenter&quot;), &quot;ReadCenter, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Recordall&quot;), &quot;Recordall, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Research Control Valves (RCV)&quot;), &quot;Research Control Valves (RCV), &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Services/Technical Field Support&quot;), &quot;Services/Technical Field Support, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Vision&quot;), &quot;Vision, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Vortex&quot;), &quot;Vortex, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Competing_Products__c, &quot;Wyco Tool&quot;), &quot;Wyco Tool, &quot;, &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Competing Products</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Competitor_Name__c</fullName>
         <externalId>false</externalId>
         <formula>Competitor__r.Name</formula>
@@ -152,17 +190,6 @@ IF(
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Product_Categories_Available__c</fullName>
-        <externalId>false</externalId>
-        <formula>TEXT( Competitor__r.Product_Categories_Available__c )</formula>
-        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-        <label>Product Categories Available</label>
-        <required>false</required>
-        <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>false</unique>
-    </fields>
-    <fields>
         <fullName>Strengths__c</fullName>
         <externalId>false</externalId>
         <formula>Competitor__r.Strengths__c</formula>
@@ -175,8 +202,24 @@ IF(
     </fields>
     <fields>
         <fullName>Target_Markets__c</fullName>
+        <description>TEXT(Competitor__r.Target_Markets__c)</description>
         <externalId>false</externalId>
-        <formula>TEXT(Competitor__r.Target_Markets__c)</formula>
+        <formula>IF( INCLUDES( Competitor__r.Target_Markets__c , &quot;Utility&quot;), &quot;Utility, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Water&quot;), &quot;Water, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Gas&quot;), &quot;Gas, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Water + Gas&quot;), &quot;Water + Gas, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Aerospace&quot;), &quot;Aerospace, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Commercial/HVAC&quot;), &quot;Commercial/HVAC, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Chemical/Petrochemical, &quot;), &quot;Chemical/Petrochemical&quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Concrete Redi-mix&quot;), &quot;Concrete Redi-mix, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Pavement - Concrete&quot;), &quot;Pavement - Concrete, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Energy/Oil &amp; Gas&quot;), &quot;Energy/Oil &amp; Gas, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Industrial&quot;), &quot;Industrial, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Irrigation/Agriculture&quot;), &quot;Irrigation/Agriculture, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Water/Wastewater Treatment&quot;), &quot;Water/Wastewater Treatment, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Process Automation &amp; Control&quot;), &quot;Process Automation &amp; Control, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Test &amp; Measurement&quot;), &quot;Test &amp; Measurement, &quot;, &quot;&quot;) +
+IF( INCLUDES(Competitor__r.Target_Markets__c, &quot;Other&quot;), &quot;Other&quot;, &quot;&quot;)</formula>
         <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
         <label>Target Markets</label>
         <required>false</required>

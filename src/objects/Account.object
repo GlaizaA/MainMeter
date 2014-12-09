@@ -419,14 +419,31 @@
         <visibleLines>3</visibleLines>
     </fields>
     <fields>
+        <fullName>Commission__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>This field designates if the commission lies with Badger Meter or the Sales Channel</inlineHelpText>
+        <label>Commission</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Badger Meter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Sales Channel</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Competitive_Account__c</fullName>
+        <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Competitive Account</label>
-        <length>10</length>
-        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Corporate_Street__c</fullName>
@@ -608,11 +625,11 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
-    <fields>
+    <!--<fields>
         <fullName>DandbCompanyId</fullName>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Lookup</type>
-    </fields>
+    </fields>-->
     <fields>
         <fullName>Data_Loader_ID__c</fullName>
         <externalId>false</externalId>
@@ -945,67 +962,27 @@
         <label>Organization Type</label>
         <picklist>
             <picklistValues>
-                <fullName>UD - Distributor (Channel Partner)</fullName>
+                <fullName>Utility Distributor (UD)</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Utility Customer</fullName>
+                <fullName>Instrumentation Representative (IR)</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Utility Distributor</fullName>
+                <fullName>Utility Customer (UC)</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Engineering Firm</fullName>
+                <fullName>Utility Other (DC)</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Alliance Partner</fullName>
+                <fullName>Instrumentation Customer (IC)</fullName>
                 <default>false</default>
             </picklistValues>
             <picklistValues>
-                <fullName>Installation Firm</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Flow Instrumentation Representative</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Flow Instrumentation Distributor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rockwell Automation – Direct</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Rockwell Automation – Distributor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Catalog House/Internet Reseller</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>System Integrator</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Machine/Skid Builder</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Contractor</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>OEM – Private Label</fullName>
-                <default>false</default>
-            </picklistValues>
-            <picklistValues>
-                <fullName>Other</fullName>
+                <fullName>Instrumentation Other</fullName>
                 <default>false</default>
             </picklistValues>
             <sorted>false</sorted>
@@ -1723,13 +1700,11 @@
     </fields>
     <fields>
         <fullName>Top_Account__c</fullName>
+        <defaultValue>false</defaultValue>
         <externalId>false</externalId>
         <label>Top Account</label>
-        <length>10</length>
-        <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
-        <type>Text</type>
-        <unique>false</unique>
+        <type>Checkbox</type>
     </fields>
     <fields>
         <fullName>Total_Number_of_Services__c</fullName>
@@ -1907,8 +1882,8 @@
         <columns>PARENT_NAME</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.ADDRESS1_CITY</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
         <columns>ACCOUNT.PHONE1</columns>
         <columns>ACCOUNT.TYPE</columns>
         <columns>CORE.USERS.ALIAS</columns>
@@ -1917,25 +1892,35 @@
         <label>All Accounts</label>
     </listViews>
     <listViews>
-        <fullName>All_ACT_Accounts_Old_Scottsdale_CRM</fullName>
+        <fullName>All_Channel_Partners</fullName>
+        <columns>PARENT_NAME</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.ADDRESS1_CITY</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
         <columns>ACCOUNT.TYPE</columns>
-        <columns>Sales_Region__c</columns>
         <columns>CORE.USERS.ALIAS</columns>
+        <columns>Badger_Meter_Business_Unit__c</columns>
         <filterScope>Everything</filterScope>
-        <label>All ACT Accounts (Old Scottsdale CRM)</label>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Channel_Partner</value>
+        </filters>
+        <label>All Channel Partners</label>
     </listViews>
     <listViews>
-        <fullName>All_Active_Customer_Accounts</fullName>
+        <fullName>All_End_Customers</fullName>
+        <columns>PARENT_NAME</columns>
         <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
-        <columns>Customer_Number__c</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
         <columns>ACCOUNT.TYPE</columns>
-        <columns>ACCOUNT.INDUSTRY</columns>
         <columns>CORE.USERS.ALIAS</columns>
+        <columns>Badger_Meter_Business_Unit__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ACCOUNT.RECORDTYPE</field>
@@ -1943,121 +1928,121 @@
             <value>Account.End_Customer</value>
         </filters>
         <filters>
-            <field>Active__c</field>
-            <operation>equals</operation>
-            <value>1</value>
+            <field>Customer_Number__c</field>
+            <operation>notEqual</operation>
         </filters>
-        <label>All Active Customer Accounts</label>
+        <label>All End Customers</label>
     </listViews>
     <listViews>
-        <fullName>All_Prospect_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_CITY</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
-        <columns>ACCOUNT.INDUSTRY</columns>
-        <columns>ACCOUNT.LAST_ACTIVITY</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.TYPE</field>
-            <operation>equals</operation>
-            <value>Prospect</value>
-        </filters>
-        <label>All Prospect Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>All_Wyco_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_CITY</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>Badger_Meter_Business_Unit__c</field>
-            <operation>equals</operation>
-            <value>Wyco</value>
-        </filters>
-        <label>All Wyco Accounts</label>
-    </listViews>
-    <listViews>
-        <fullName>Central_Region_Industrial</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>Twiss</value>
-        </filters>
-        <label>Midwest-Flow Instrumentation</label>
-    </listViews>
-    <listViews>
-        <fullName>Data_Loader</fullName>
-        <columns>DM_A_External_ID__c</columns>
-        <columns>DI_A_External_ID__c</columns>
+        <fullName>All_Prospects</fullName>
         <columns>PARENT_NAME</columns>
         <columns>ACCOUNT.NAME</columns>
-        <columns>Load_File__c</columns>
-        <columns>Active__c</columns>
-        <columns>Organization_Type__c</columns>
-        <columns>ACCOUNT.SITE</columns>
-        <columns>ACCOUNT.ADDRESS1_STREET</columns>
-        <columns>ACCOUNT.ADDRESS2_STREET</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
         <columns>CORE.USERS.ALIAS</columns>
-        <columns>ACCOUNT.ACCOUNT_NUMBER</columns>
-        <columns>ACCOUNT.RECORDTYPE</columns>
+        <columns>Badger_Meter_Business_Unit__c</columns>
         <filterScope>Everything</filterScope>
         <filters>
-            <field>Data_Loader_ID__c</field>
-            <operation>startsWith</operation>
-            <value>CSLOAD</value>
-        </filters>
-        <label>Data Loader</label>
-    </listViews>
-    <listViews>
-        <fullName>Mexico_Accounts</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
-        <columns>Sales_Region__c</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>ACCOUNT.ADDRESS1_COUNTRY</field>
+            <field>ACCOUNT.RECORDTYPE</field>
             <operation>equals</operation>
-            <value>Mexico</value>
+            <value>Account.End_Customer</value>
         </filters>
-        <label>Mexico Accounts</label>
+        <filters>
+            <field>Customer_Number__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>All Prospects</label>
     </listViews>
     <listViews>
         <fullName>MyAccounts</fullName>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.ADDRESS1_CITY</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
         <columns>ACCOUNT.PHONE1</columns>
+        <columns>Badger_Meter_Business_Unit__c</columns>
         <columns>ACCOUNT.TYPE</columns>
         <filterScope>Mine</filterScope>
         <label>My Accounts</label>
     </listViews>
     <listViews>
-        <fullName>NewThisWeek</fullName>
+        <fullName>My_Channel_Partners</fullName>
+        <columns>PARENT_NAME</columns>
         <columns>ACCOUNT.NAME</columns>
         <columns>ACCOUNT.ADDRESS1_CITY</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.ADDRESS1_COUNTRY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
         <columns>ACCOUNT.PHONE1</columns>
         <columns>ACCOUNT.TYPE</columns>
         <columns>CORE.USERS.ALIAS</columns>
         <columns>Badger_Meter_Business_Unit__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.Channel_Partner</value>
+        </filters>
+        <label>My Channel Partners</label>
+    </listViews>
+    <listViews>
+        <fullName>My_End_Customers</fullName>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Badger_Meter_Business_Unit__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.End_Customer</value>
+        </filters>
+        <filters>
+            <field>Customer_Number__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>My End Customers</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Prospects</fullName>
+        <columns>PARENT_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>Badger_Meter_Business_Unit__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>ACCOUNT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Account.End_Customer</value>
+        </filters>
+        <filters>
+            <field>Customer_Number__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>My Prospects</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>ACCOUNT.ADDRESS1_CITY</columns>
+        <columns>ACCOUNT.ADDRESS1_STATE_CODE</columns>
+        <columns>ACCOUNT.ADDRESS1_COUNTRY_CODE</columns>
+        <columns>ACCOUNT.PHONE1</columns>
+        <columns>Badger_Meter_Business_Unit__c</columns>
+        <columns>ACCOUNT.TYPE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
         <filterScope>Everything</filterScope>
         <filters>
             <field>ACCOUNT.CREATED_DATE</field>
@@ -2065,67 +2050,6 @@
             <value>THIS_WEEK</value>
         </filters>
         <label>New This Week</label>
-    </listViews>
-    <listViews>
-        <fullName>Northeast_View</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <columns>CORE.USERS.LAST_NAME</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.LAST_NAME</field>
-            <operation>equals</operation>
-            <value>Mahaffey</value>
-        </filters>
-        <label>Northeast Region-Flow Instrumentation</label>
-    </listViews>
-    <listViews>
-        <fullName>South_Region_Industrial</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>JHuff</value>
-        </filters>
-        <label>South Region -Flow Instrumentation</label>
-    </listViews>
-    <listViews>
-        <fullName>Southeast_Region_Industrial</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>AEast</value>
-        </filters>
-        <label>Southeast Region -Flow Instrumentation</label>
-    </listViews>
-    <listViews>
-        <fullName>West_Region_Industrial</fullName>
-        <columns>ACCOUNT.NAME</columns>
-        <columns>ACCOUNT.ADDRESS1_STATE</columns>
-        <columns>ACCOUNT.PHONE1</columns>
-        <columns>ACCOUNT.TYPE</columns>
-        <columns>CORE.USERS.ALIAS</columns>
-        <filterScope>Everything</filterScope>
-        <filters>
-            <field>CORE.USERS.ALIAS</field>
-            <operation>equals</operation>
-            <value>BEric</value>
-        </filters>
-        <label>Western Region - Flow Instrumentation</label>
     </listViews>
     <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
     <recordTypes>
@@ -2329,6 +2253,17 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Commission__c</picklist>
+            <values>
+                <fullName>Badger Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Channel</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Credit_Status__c</picklist>
             <values>
                 <fullName>Good</fullName>
@@ -2469,67 +2404,11 @@
         <picklistValues>
             <picklist>Organization_Type__c</picklist>
             <values>
-                <fullName>Alliance Partner</fullName>
+                <fullName>Instrumentation Representative %28IR%29</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Catalog House%2FInternet Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contractor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering Firm</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Flow Instrumentation Distributor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Flow Instrumentation Representative</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Installation Firm</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Machine%2FSkid Builder</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OEM %E2%80%93 Private Label</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rockwell Automation %E2%80%93 Direct</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rockwell Automation %E2%80%93 Distributor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>System Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>UD - Distributor %28Channel Partner%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utility Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utility Distributor</fullName>
+                <fullName>Utility Distributor %28UD%29</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -3305,6 +3184,17 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Commission__c</picklist>
+            <values>
+                <fullName>Badger Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Channel</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Credit_Status__c</picklist>
             <values>
                 <fullName>Good</fullName>
@@ -3445,67 +3335,11 @@
         <picklistValues>
             <picklist>Organization_Type__c</picklist>
             <values>
-                <fullName>Alliance Partner</fullName>
+                <fullName>Instrumentation Customer %28IC%29</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Catalog House%2FInternet Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contractor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering Firm</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Flow Instrumentation Distributor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Flow Instrumentation Representative</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Installation Firm</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Machine%2FSkid Builder</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OEM %E2%80%93 Private Label</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rockwell Automation %E2%80%93 Direct</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rockwell Automation %E2%80%93 Distributor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>System Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>UD - Distributor %28Channel Partner%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utility Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utility Distributor</fullName>
+                <fullName>Utility Customer %28UC%29</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -4281,6 +4115,17 @@
             </values>
         </picklistValues>
         <picklistValues>
+            <picklist>Commission__c</picklist>
+            <values>
+                <fullName>Badger Meter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Channel</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
             <picklist>Credit_Status__c</picklist>
             <values>
                 <fullName>Good</fullName>
@@ -4421,67 +4266,11 @@
         <picklistValues>
             <picklist>Organization_Type__c</picklist>
             <values>
-                <fullName>Alliance Partner</fullName>
+                <fullName>Instrumentation Other</fullName>
                 <default>false</default>
             </values>
             <values>
-                <fullName>Catalog House%2FInternet Reseller</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Contractor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Engineering Firm</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Flow Instrumentation Distributor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Flow Instrumentation Representative</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Installation Firm</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Machine%2FSkid Builder</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>OEM %E2%80%93 Private Label</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Other</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rockwell Automation %E2%80%93 Direct</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Rockwell Automation %E2%80%93 Distributor</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>System Integrator</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>UD - Distributor %28Channel Partner%29</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utility Customer</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>Utility Distributor</fullName>
+                <fullName>Utility Other %28DC%29</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
