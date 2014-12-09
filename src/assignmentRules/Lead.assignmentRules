@@ -113,6 +113,7 @@
         <ruleEntry>
             <assignedTo>Latin_America_Queue</assignedTo>
             <assignedToType>Queue</assignedToType>
+            <booleanFilter>1 AND 2</booleanFilter>
             <criteriaItems>
                 <field>Lead.RecordTypeId</field>
                 <operation>equals</operation>
@@ -373,7 +374,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>chucklejeune@gmail.com</assignedTo>
+            <assignedTo>ccardella@badgermeter.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.RecordTypeId</field>
@@ -416,7 +417,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>chucklejeune@gmail.com.test.1</assignedTo>
+            <assignedTo>gwaltman@badgermeter.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.RecordTypeId</field>
@@ -528,7 +529,7 @@
             </criteriaItems>
         </ruleEntry>
         <ruleEntry>
-            <assignedTo>chucklejeune@gmail.com.test.2</assignedTo>
+            <assignedTo>jplahn@badgermeter.com</assignedTo>
             <assignedToType>User</assignedToType>
             <criteriaItems>
                 <field>Lead.RecordTypeId</field>
@@ -670,6 +671,7 @@
         <ruleEntry>
             <assignedTo>ckransler@badgermeter.com</assignedTo>
             <assignedToType>User</assignedToType>
+            <booleanFilter>1 AND 2</booleanFilter>
             <criteriaItems>
                 <field>Lead.RecordTypeId</field>
                 <operation>equals</operation>
