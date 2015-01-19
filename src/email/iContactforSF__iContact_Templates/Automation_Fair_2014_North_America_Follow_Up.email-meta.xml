@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Automation Fair 2014 North America Follow Up</name>
+    <style>none</style>
+    <subject>Thank you for visiting us at Automation Fair</subject>
+    <textOnly>Automation Fair Follow Up | November 25, 2014
+
+
+Thank you for visiting Badger Meter at
+Automation Fair!
+A Badger Meter sales representative will be in contact with you soon to discuss how our flow meters or control valves may be a fit for your process. If you need immediate assistance, please call 800-876-3837 or email infocentral@badgermeter.com
+An industry leader in both mechanical and electronic flow metering technologies, we offer one of the broadest flow control and measurement portfolios in the industry. Simply put, Badger Meter provides technology to measure and control whatever moves through a pipe or pipeline – including water, air, steam, oil, other liquids and gases.
+As a Rockwell Automation Encompass Partner, Badger Meter is positioned to be a trusted and supportive supplier. We have the industry experience and knowledge needed to support our customers from system design, to installation, and beyond.
+We look forward to exploring solutions with you to help advance your business.
+
+
+
+Flow Meters and Control Valve Solutions
+
+
+
+Click to download brochure
+
+Contact
+800-876-3837
+infocentral@badgermeter.com
+www.badgermeter.com
+
+
+
+
+
+As always, we welcome your input. Please contact us with any comments or suggestions you may have. Marketing eNews Feedback</textOnly>
+    <type>custom</type>
+</EmailTemplate>

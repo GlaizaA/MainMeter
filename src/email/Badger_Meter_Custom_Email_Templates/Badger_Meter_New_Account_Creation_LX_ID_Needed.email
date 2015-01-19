@@ -1,0 +1,30 @@
+The following account has been created in Salesforce and requires a new LX ID in order to process the order.
+
+Account Name: {!Account.Name}
+
+Remittance Address 1: {!Account.BillingStreet}
+City:  {!Account.BillingCity}
+State:  {!Account.BillingState}
+Zip:  {!Account.BillingPostalCode}
+Country:  {!Account.BillingCountry}
+Sales Credit Number: {!Account.Sales_Credit_Number__c}
+Phone #: <Manual Entry>
+Fax #: <Manual Entry>
+Template: <Manual Entry>
+Warehouse Order Code: {!Account.Warehouse_Order_Code__c}
+Pricing Region: {!Account.Sales_Territory__c}
+Shipping Date: <Manual Entry>
+Order Amount: <Manual Entry>
+RFC No (MEX Only): <Manual Entry>
+GST No (CAN Only): <Manual Entry>
+Other Gov't ID:  <Manual Entry>
+Sales Tax Exempt: <Manual Entry>
+AP Contact Name: <Manual Entry>
+Requested By:   <Manual Entry>
+Additional Information <Manual Entry>
+
+Account URL: test.salesforce.com\{!Account.Id}
+Salesforce ID: {!Account.Id}
+
+
+Please populate the Salesforce ID in LX and the LX ID in Salesforce by navigating to the URL above.

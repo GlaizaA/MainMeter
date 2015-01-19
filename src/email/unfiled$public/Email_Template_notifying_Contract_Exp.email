@@ -1,0 +1,17 @@
+Dear Manager 
+
+This to notify that the Contract Expiration date for {!01I50000000UqmD.Name} is approaching its due date. Please do the needful.
+
+Details of the Rep: 
+
+Contract Status = {!01I50000000UqmD.00N50000002q4Le} 
+Contract Notes = {!01I50000000UqmD.00N50000002q5y8} 
+Rep Disposition = {!01I50000000UqmD.00N50000002q5yD} 
+
+You can follow the link below. 
+
+{!01I50000000UqmD.Link} 
+
+Regards 
+
+{!User.Name}

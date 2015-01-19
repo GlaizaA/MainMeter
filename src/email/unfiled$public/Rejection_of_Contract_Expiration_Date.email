@@ -1,0 +1,8 @@
+Dear {!Rep__c.OwnerFullName}
+Sorry to inform you that your Contract Expiration date is rejected.
+
+Please follow the link below .
+{!01I50000000UqmD.Link}
+
+Thanks
+{!User.Name}

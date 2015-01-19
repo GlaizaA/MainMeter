@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomPageWebLink xmlns="http://soap.sforce.com/2006/04/metadata">
+    <availability>online</availability>
+    <displayType>link</displayType>
+    <encodingKey>UTF-8</encodingKey>
+    <hasMenubar>false</hasMenubar>
+    <hasScrollbars>true</hasScrollbars>
+    <hasToolbar>false</hasToolbar>
+    <height>600</height>
+    <isResizable>true</isResizable>
+    <linkType>url</linkType>
+    <masterLabel>Getting Started: Reports &amp; Dashboards</masterLabel>
+    <openType>newWindow</openType>
+    <position>none</position>
+    <protected>false</protected>
+    <showsLocation>false</showsLocation>
+    <showsStatus>false</showsStatus>
+    <url>https://lms.cfs-api.com/v1/12/launch.aspx?hash=WUlRa1pjd0RRUDc2bW01cW9nSTdFVVd4TGFIYURsMzJFSnpNdmFrNWd3OFdyN21VRXVyRDZOUTRrc1h6Z0JVSnU3ZW1USGs5YjRsd3VMSWZDVGxkSEpnN1ltS09sb0RINkNCamRkOHVLbjRndll2SGd1bXlwbFc2VXFMUitBK21mN2w1alhiV05mMlp2ZWdmTjRiNm9nPT0=</url>
+</CustomPageWebLink>

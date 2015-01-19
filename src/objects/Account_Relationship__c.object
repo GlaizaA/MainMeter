@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableReports>false</enableReports>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <fields>
+        <fullName>DM_A_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>DM A External ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>End_Customer_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>End Customer Name</label>
+        <length>60</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner 1</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Account Relationships</relationshipLabel>
+        <relationshipName>Account_Relationships</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_1_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_1__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner 1 (formula)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_Fax__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.Fax</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner 2 Fax</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_Phone__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.Phone</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner 2 Phone</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_Sales_Cred_Num__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.Sales_Credit_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner 2 Sales Credit Number</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_Shipping_Country__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Partner_2__r.ShippingCountryCode)</formula>
+        <label>Partner 2 Shipping Country</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_Shipping_Postal_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.ShippingPostalCode</formula>
+        <label>Partner 2 Shipping Postal Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_Shipping_State__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Partner_2__r.ShippingStateCode)</formula>
+        <label>Partner 2 Shipping State</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_Shipping_Street__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.ShippingStreet</formula>
+        <label>Partner 2 Shipping Street</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_Tax_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.Tax_Identifier__c</formula>
+        <label>Partner 2 Tax Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_Warehouse_Order_Code__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Partner_2__r.Warehouse_Order_Code__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner 2 Warehouse Order Code</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Partner 2</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Account Relationships</relationshipLabel>
+        <relationshipName>Account_Relationships1</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Partner_2_city__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.ShippingCity</formula>
+        <label>Partner 2 city</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.Email__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner 2 email</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_2_formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Partner 2(formula)</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reverse_Role__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(Role__c,
+&quot;is a distributor for&quot;, &quot;is a customer of&quot;,
+&quot;is a billing vendor for&quot;, &quot;is a customer of&quot;,
+&quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reverse Role</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Role</label>
+        <picklist>
+            <picklistValues>
+                <fullName>is a distributor for</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>is a customer of</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>is a billing vendor for</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Ship_To__c</fullName>
+        <externalId>false</externalId>
+        <formula>Partner_2__r.Ship_To_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Ship To</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Account Relationship</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Partner_1__c</columns>
+        <columns>Role__c</columns>
+        <columns>Partner_2__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Contract_Expiration_Manager_Queue_Account_Relationship</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Contract Expiration Manager Queue</label>
+        <queue>Contract_Expiration_Manager_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>AR-ID-{00000}</displayFormat>
+        <label>AR-ID</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Account Relationships</pluralLabel>
+    <searchLayouts>
+        <customTabListAdditionalFields>Partner_1__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Role__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Partner_2__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Ship_To__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>Partner_1__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Role__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Partner_2__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Ship_To__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>NAME</searchFilterFields>
+        <searchFilterFields>Partner_1__c</searchFilterFields>
+        <searchFilterFields>Role__c</searchFilterFields>
+        <searchFilterFields>Partner_2__c</searchFilterFields>
+        <searchFilterFields>Ship_To__c</searchFilterFields>
+        <searchResultsAdditionalFields>Partner_1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Role__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Partner_2__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Ship_To__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+</CustomObject>

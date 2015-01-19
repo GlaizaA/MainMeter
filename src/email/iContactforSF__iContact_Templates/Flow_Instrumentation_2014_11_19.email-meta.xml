@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Flow Instrumentation 2014-11-19</name>
+    <style>none</style>
+    <subject>Dynasonics Price List Update</subject>
+    <textOnly>Dynasonics Price List Updates | November 19, 2014
+
+Confidential &amp; Proprietary
+
+
+Dear Dynasonics Representative:
+As stated in the eNews on November 18, the Dynasonics price list has been updated and will go into effect January 2, 2015. The new price list can be downloaded on the extranet. Download
+Listed below is a summary of the changes that were implemented since the August 15, 2014 price list.
+
+Price Adjustments
+
+Increased price approximately 3-5% of standard temperature transducers used with TFX Ultra and TFXL, including integral transducers.
+Increased price approximately 3% of TFXL transmitters. TFX Ultra transmitter prices remain unchanged.
+Reduced price approximately 1% of high temperature transducers used with TFX Ultra and TFXL
+Reduced price by $41 for 200°C RTD clamp on kit.
+Increased price approximately 3% of DUFX Doppler hand held meter, depending on options.
+Set minimum price of $10 for accessories and increased acoustic couplant prices.
+
+Standard Repairs Updates
+
+Removed DXNP and DUFX rental.
+Added calibration only service and transducer cable replacements.
+DFSN status changed to obsolete product.
+
+To download this summary as a PDF, click here.
+
+
+Please contact your regional sales manager or me at
+414-371-6530, cadesanspach@badgermeter.com with any questions you may have.
+Sincerely,
+Cheryl Ades Anspach
+Marketing Manager - Dynasonics
+
+
+
+
+
+
+
+
+As always, we welcome your input. Please contact us with any comments or suggestions you may have. Marketing eNews Feedback</textOnly>
+    <type>custom</type>
+</EmailTemplate>

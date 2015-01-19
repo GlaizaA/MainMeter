@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Utility eNews 2014-10-31</name>
+    <style>none</style>
+    <subject>CONNECT: End of Life and End of Support</subject>
+    <textOnly>View Web Version
+
+
+Special Utility Edition - CONECT EOL | October 31, 2014
+
+Confidential &amp; Proprietary
+
+
+CONNECT: End of Life and End of Support
+
+The CONNECT reading software was last updated in 2009. Since that time, software and meter reading technology have evolved considerably, as have customer expectations. Since the last CONNECT update, Badger Meter has introduced many new products which are not supported in CONNECT, including ORION® Cellular, Fixed Network (SE) and Migratable (ME) endpoints, HR-E®and HR-E LCD high-resolution encoders, high resolution E-Series® Ultrasonic meters, and the new ORION Field Application 4.0.0 handheld route reading software.
+
+
+Additionally, feedback from customers indicate that it is increasingly difficult to find support for the Microsoft operating software supported by CONNECT. For these reasons, Badger Meter is announcing the CONNECT software end of life. Effective immediately, Badger Meter will no longer renew CONNECT software maintenance agreements. Customers with active CONNECT maintenance agreements will continue to receive technical support until the term of their current service agreement expires.
+
+
+With this announcement, please use this opportunity to contact your utility customers regarding upgrading from CONNECT to BEACON® AMA or ReadCenter® Analytics Mobile. Upgrade options include:
+
+BEACON AMA - please contact Marketing for pricing and timing.
+ReadCenter Analytics Mobile – utilize Software Upgrade Marketing Program RDC-MP-00770, which is located on the Badger Meter extranet.
+Unused fees paid for CONNECT software maintenance agreements may be applied toward a utility’s reading data management software upgrade at the time of software transiton.
+Should a customer initially deploy ReadCenter Analytics Mobile and later wish to migrate to BEACON AMA, licensing fees paid now will be taken into consideration when BEACON AMA pricing is established.
+
+A list of end utility customers with CONNECT software deployments will be provided to all sales support managers for distribution to the remainder of the direct and distributor sales managers.
+
+
+If you have any questions about this information, please contact Kristie Anderson.
+
+Stay Connected
+
+
+
+
+As always, we welcome your input. Please feel free to contact us with any comments or suggestions you may have. Marketing eNews Feedback</textOnly>
+    <type>custom</type>
+</EmailTemplate>

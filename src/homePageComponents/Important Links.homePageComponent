@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageComponent xmlns="http://soap.sforce.com/2006/04/metadata">
+    <links>Rep_Search_Flow_Instrumentation</links>
+    <links>Rep_Search_Utility</links>
+    <links>Getting_Started_Reports_Dashboards</links>
+    <links>Getting_Started_Using_Sales_Cloud</links>
+    <pageComponentType>links</pageComponentType>
+</HomePageComponent>

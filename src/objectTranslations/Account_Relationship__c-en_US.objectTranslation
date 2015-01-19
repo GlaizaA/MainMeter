@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Account Relationship</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Account Relationships</value>
+    </caseValues>
+    <fields>
+        <label><!-- DM A External ID --></label>
+        <name>DM_A_External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Customer Name --></label>
+        <name>End_Customer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 1 --></label>
+        <name>Partner_1__c</name>
+        <relationshipLabel><!-- Account Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner 1 (formula) --></label>
+        <name>Partner_1_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 Fax --></label>
+        <name>Partner_2_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 Phone --></label>
+        <name>Partner_2_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 Sales Credit Number --></label>
+        <name>Partner_2_Sales_Cred_Num__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 Shipping Country --></label>
+        <name>Partner_2_Shipping_Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 Shipping Postal Code --></label>
+        <name>Partner_2_Shipping_Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 Shipping State --></label>
+        <name>Partner_2_Shipping_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 Shipping Street --></label>
+        <name>Partner_2_Shipping_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 Tax Code --></label>
+        <name>Partner_2_Tax_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 Warehouse Order Code --></label>
+        <name>Partner_2_Warehouse_Order_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 --></label>
+        <name>Partner_2__c</name>
+        <relationshipLabel><!-- Account Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 city --></label>
+        <name>Partner_2_city__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2 email --></label>
+        <name>Partner_2_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner 2(formula) --></label>
+        <name>Partner_2_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reverse Role --></label>
+        <name>Reverse_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>is a billing vendor for</masterLabel>
+            <translation><!-- is a billing vendor for --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>is a customer of</masterLabel>
+            <translation><!-- is a customer of --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>is a distributor for</masterLabel>
+            <translation><!-- is a distributor for --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Ship To --></label>
+        <name>Ship_To__c</name>
+    </fields>
+    <layouts>
+        <layout>Account Relationship Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Copy of BigMachines Layout for admins</layout>
+        <sections>
+            <label><!-- BigMachines Integration fields --></label>
+            <section>BigMachines Integration fields</section>
+        </sections>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

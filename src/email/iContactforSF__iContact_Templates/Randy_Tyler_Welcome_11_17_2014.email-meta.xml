@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Randy Tyler Welcome 11.17.2014</name>
+    <style>none</style>
+    <subject>My New Contact Information - Randy Tyler</subject>
+    <textOnly>Dear Valued Colleague,
+
+
+I hope this note finds you well and gearing up for the winter months. I just wanted to alert you to a change in my contact information. As of this month, I am fortunate to be working for Badger Meter on their Oil &amp; Gas product portfolio.
+
+
+As you know, the flow of liquids and gases must be measured during every phase of operation. These applications demand the highest flow meter accuracy and reliability, as well as long-term stability and a low cost-of-ownership. As worldwide leader in flow metering technologies, Badger Meter offers one of the broadest product portfolios for use from the wellhead to the pipeline including solutions for, exploration and drilling, well operation and production, water and wastewater processing, and data acquisition and analysis.
+
+
+I am excited to begin the conversation with you about these products and show you how they will exceed your expectations and help you control, manage and optimize your product.
+
+
+Please take a moment to review our brochure to learn about proven oil and gas solutions from Badger Meter. I will follow-up with you to learn more about your needs and how I can best support your company. Thank you for your time.
+
+
+Sincerely,
+
+
+Randy W. Tyler
+
+Strategic Accounts Manager
+
+US-Canada
+
+414-371-7203
+
+RTyler@badgermeter.com</textOnly>
+    <type>custom</type>
+</EmailTemplate>

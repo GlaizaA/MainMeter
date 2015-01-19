@@ -1,0 +1,3195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddInfluence</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <businessProcesses>
+        <fullName>Badger Opportunity</fullName>
+        <isActive>true</isActive>
+        <values>
+            <fullName>0 - No Stages Started</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 - Prospecting</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>1 - Top Account</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Account Qualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>2 - Qualification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Needs Analysis</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - Opportunity Identification</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Quote%5CBid</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>4 - Technical Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Negotiation%5CReview</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5 - Proposal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - Proposal Outcome</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7 - Receive Order</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Lost</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed Won</fullName>
+            <default>false</default>
+        </values>
+    </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Decision_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Decision Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Revenue_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Revenue Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Amount</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Application_Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Application Description</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Applications_of__c</fullName>
+        <externalId>false</externalId>
+        <label>Applications of Interest</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Fluid Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Residential Meters</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>C&amp;I Meters</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Encoders</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Mobile Reading System</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Fixed Network Reading Systems</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Analytics/Meter Data Management Software</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Bid_Sales_Process_Opportunity_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Bid Sales Process Opportunity ID</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BigMachines__Line_Items__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Line Items</label>
+        <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CloseDate</fullName>
+        <inlineHelpText>Estimated close date if the opportunity is in an open stage, actual close date if the opportunity is in a closed won/lost.</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContractId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DM_O_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>DM O External ID</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Data_Loader_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Data Loader ID</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>End_User_Information__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Any details on the End User Company that may not be captured elsewhere (e.g., related Account record)</inlineHelpText>
+        <label>End User Information</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ExpectedRevenue</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Expected_Revenue_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Revenue Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Sales_Approach__c</fullName>
+        <externalId>false</externalId>
+        <label>Expected Sales Approach</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Utility</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cross-Sell</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsPrivate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>Advertisement - Digital</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Advertisement - Print</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Badger Meter Salesperson (Direct)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Catalog House / Internet</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rep</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rockwell Automation Distributor</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Rockwell Automation Encompass Event</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Seminar - Self</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Purchased Lists</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Email Campaign</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Load_File__c</fullName>
+        <externalId>false</externalId>
+        <label>Load File</label>
+        <length>80</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meter_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Meter Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Residential</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>None</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>NextStep</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Number_of_Electric_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Electric Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Gas_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Gas Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Water_Services__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Water Services</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Order_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Order Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Original_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Original Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Child Opportunities</relationshipLabel>
+        <relationshipName>Opportunities</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pivotal_ID__c</fullName>
+        <externalId>false</externalId>
+        <label>Pivotal ID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Primary_Product_Solutions__c</fullName>
+        <externalId>false</externalId>
+        <label>Primary Product Solution(s)</label>
+        <picklist>
+            <controllingField>Expected_Sales_Approach__c</controllingField>
+            <picklistValues>
+                <fullName>Automotive Fluid Products</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BEACON AMA</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blancett</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concrete Fluid Products</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Coriolis</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cox</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Acquisition / Management</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dynasonics</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E-Series Electronic</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flo-tech</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flow Dynamics Calibration Services</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flow Dynamics Calibrator Products</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>GALAXY</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hedland</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HR-E</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Impeller</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial Oval Gear (IOG)</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial Turbo</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ModMAG/M-Series</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Monitors / Accessories</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ORION</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preso</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ReadCenter</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recordall</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research Control Valves (RCV)</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Services / Technical Field Support</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vision</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vortex</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wyco Tool</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Industrial</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Connectivity - Iton</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Connectivity - Generic</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E-Series</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HRE</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HRE/LCD</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Managed Solution</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ORION CE</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ORION ME</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ORION SE</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ORION Cellular</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Traditional Fixed Reading System</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Traditional Mobile Reading System</fullName>
+                <controllingFieldValues>Cross-Sell</controllingFieldValues>
+                <controllingFieldValues>Utility</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Probability</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <externalId>false</externalId>
+        <label>Product Lines of Interest</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Automotive Fluid Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>BEACON AMA</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Blancett</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Concrete Fluid Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Coriolis</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Cox</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Data Acquisition / Management</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Dynasonics</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>E-Series Electronic</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flo-Tech</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flow Dynamics Calibration Services</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Flow Dynamics Calibrator Products</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Galaxy</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Hedland</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Impeller</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial Oval Gear (IOG)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Industrial Turbo</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ModMAG/M-Series</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Monitors / Accessories</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Orion</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Preso</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>ReadCenter</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Recordall</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Research Control Valves (RCV)</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Services / Technical Field Support</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vision</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Vortex</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Wyco Tool</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Proposal_Bid_Expiration_Reminder__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposal\Bid Expiration Reminder</label>
+        <picklist>
+            <picklistValues>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>60 Days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>90 Days</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Bid_Expiration__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposal\Bid Expiration</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Due_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If specified</inlineHelpText>
+        <label>Proposal Due Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Opening_Date__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>If applicable</inlineHelpText>
+        <label>Proposal Opening Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Outcome_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposal Outcome Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Proposal_Request_Receive_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposal Request Receive Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Request_Received__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposal Request Received</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Submitted_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposal Submitted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Proposal_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposal Type</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RFI</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>RFP</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StageName</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>1 - Prospecting</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>10</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>2 - Qualification</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>20</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>3 - Needs Analysis</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>30</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>4 - Quote\Bid</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>40</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>5 - Negotiation\Review</fullName>
+                <closed>false</closed>
+                <default>false</default>
+                <forecastCategory>Pipeline</forecastCategory>
+                <probability>50</probability>
+                <won>false</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Won</fullName>
+                <closed>true</closed>
+                <default>false</default>
+                <forecastCategory>Closed</forecastCategory>
+                <probability>100</probability>
+                <won>true</won>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Closed Lost</fullName>
+                <closed>true</closed>
+                <default>false</default>
+                <forecastCategory>Omitted</forecastCategory>
+                <probability>0</probability>
+                <won>false</won>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SyncedQuoteId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>TSM__c</fullName>
+        <externalId>false</externalId>
+        <label>TSM</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TotalOpportunityQuantity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Total_Opportunity__c</fullName>
+        <defaultValue>0.0</defaultValue>
+        <description>Sum of the prices of related BigMachines Quotes</description>
+        <externalId>false</externalId>
+        <label>Total Award Dollars</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Turnkey_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Turnkey Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Turnkey__c</fullName>
+        <externalId>false</externalId>
+        <label>Turnkey?</label>
+        <picklist>
+            <picklistValues>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Undecided</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Type</fullName>
+        <picklist>
+            <picklistValues>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Website__c</fullName>
+        <externalId>false</externalId>
+        <label>Website</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Win_Loss_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Win/Loss Reason</label>
+        <picklist>
+            <controllingField>StageName</controllingField>
+            <picklistValues>
+                <fullName>Price</fullName>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+                <controllingFieldValues>Closed Won</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Performance</fullName>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+                <controllingFieldValues>Closed Won</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Value</fullName>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+                <controllingFieldValues>Closed Won</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Availability and/or lead time</fullName>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+                <controllingFieldValues>Closed Won</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Features</fullName>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+                <controllingFieldValues>Closed Won</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Strategic Supplier</fullName>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+                <controllingFieldValues>Closed Won</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>No bid</fullName>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <picklistValues>
+                <fullName>Customer Canceled Bid</fullName>
+                <controllingFieldValues>Closed Lost</controllingFieldValues>
+                <default>false</default>
+            </picklistValues>
+            <sorted>false</sorted>
+        </picklist>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>ddc_prospector__Sourced_from_Data_com_del__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>IF( OR(CONTAINS(TEXT(LeadSource),&quot;Jigsaw&quot;),CONTAINS(TEXT(LeadSource),&quot;Data.com&quot;), Account.ddc_prospector__Sourced_from_Data_com__c = 1), &quot;Added from Data.com&quot;,&quot;Other&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Sourced from Data.com</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>AllOpportunities</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Central_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>Primary_Product_Solutions__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>notEqual</operation>
+            <value>CKran</value>
+        </filters>
+        <label>All Central Ind. Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Mountain_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>Primary_Product_Solutions__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>notEqual</operation>
+            <value>CKran</value>
+        </filters>
+        <label>All Mountain Ind. Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Northeast_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>Primary_Product_Solutions__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Northeast Ind. Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Preso_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Application_Description__c</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Primary_Product_Solutions__c</field>
+            <operation>includes</operation>
+            <value>Preso</value>
+        </filters>
+        <label>All Preso Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_RCV_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>Application_Description__c</columns>
+        <columns>CORE.USERS.FULL_NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Primary_Product_Solutions__c</field>
+            <operation>includes</operation>
+            <value>Research Control Valve</value>
+        </filters>
+        <label>All RCV Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_South_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>Primary_Product_Solutions__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>notEqual</operation>
+            <value>CKran</value>
+        </filters>
+        <label>All South Ind. Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Southeast_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>Primary_Product_Solutions__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>notEqual</operation>
+            <value>CKran</value>
+        </filters>
+        <label>All Southeast Ind. Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>All_West_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>OPPORTUNITY.STAGE_NAME</columns>
+        <columns>OPPORTUNITY.PROBABILITY</columns>
+        <columns>Primary_Product_Solutions__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CORE.USERS.ALIAS</field>
+            <operation>notEqual</operation>
+            <value>CKran</value>
+        </filters>
+        <label>All West Ind. Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingNextMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>NEXT_MONTH</value>
+        </filters>
+        <label>Closing Next Month</label>
+    </listViews>
+    <listViews>
+        <fullName>ClosingThisMonth</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CLOSED</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>OPPORTUNITY.CLOSE_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_MONTH</value>
+        </filters>
+        <label>Closing This Month</label>
+    </listViews>
+    <listViews>
+        <fullName>MyOpportunities</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Won_Opportunities</fullName>
+        <columns>OPPORTUNITY.NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>OPPORTUNITY.AMOUNT</columns>
+        <columns>OPPORTUNITY.CLOSE_DATE</columns>
+        <columns>Win_Loss_Reason__c</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>OPPORTUNITY.WON</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>My Won Opportunities</label>
+    </listViews>
+    <listViews>
+        <fullName>NewThisWeek</fullName>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OPPORTUNITY.CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>THIS_WEEK</value>
+        </filters>
+        <label>New This Week</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>CloseOpportunity</fullName>
+        <active>true</active>
+        <businessProcess>Badger Opportunity</businessProcess>
+        <label>Closed Opportunity</label>
+        <picklistValues>
+            <picklist>Applications_of__c</picklist>
+            <values>
+                <fullName>Fluid Management</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expected_Sales_Approach__c</picklist>
+            <values>
+                <fullName>Cross-Sell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement - Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advertisement - Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Automation Encompass Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Self</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Meter_Type__c</picklist>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residential</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Product_Solutions__c</picklist>
+            <values>
+                <fullName>Automotive Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEACON AMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blancett</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concrete Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connectivity - Generic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connectivity - Iton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coriolis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Acquisition %2F Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dynasonics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Series</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Series Electronic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flo-tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibration Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibrator Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GALAXY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HRE%2FLCD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hedland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impeller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Oval Gear %28IOG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Turbo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managed Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ModMAG%2FM-Series</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitors %2F Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION CE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION Cellular</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION SE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preso</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ReadCenter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recordall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Control Valves %28RCV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Technical Field Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traditional Fixed Reading System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traditional Mobile Reading System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vortex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyco Tool</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>Automotive Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEACON AMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blancett</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concrete Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coriolis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Acquisition %2F Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dynasonics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Series Electronic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flo-Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibration Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibrator Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Galaxy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hedland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impeller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Oval Gear %28IOG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Turbo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ModMAG%2FM-Series</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitors %2F Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preso</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ReadCenter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recordall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Control Valves %28RCV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Technical Field Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vortex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyco Tool</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposal_Bid_Expiration_Reminder__c</picklist>
+            <values>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90 Days</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposal_Type__c</picklist>
+            <values>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Turnkey__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undecided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Win_Loss_Reason__c</picklist>
+            <values>
+                <fullName>Availability and%2For lead time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Canceled Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Features</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Flow_Instrumentation</fullName>
+        <active>true</active>
+        <businessProcess>Badger Opportunity</businessProcess>
+        <label>Flow Instrumentation</label>
+        <picklistValues>
+            <picklist>Applications_of__c</picklist>
+            <values>
+                <fullName>Analytics%2FMeter Data Management Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C%26I Meters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Encoders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed Network Reading Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fluid Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile Reading System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residential Meters</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expected_Sales_Approach__c</picklist>
+            <values>
+                <fullName>Cross-Sell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement - Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advertisement - Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Badger Meter Salesperson %28Direct%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalog House %2F Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased Lists</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Automation Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Automation Encompass Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Self</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Meter_Type__c</picklist>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residential</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Product_Solutions__c</picklist>
+            <values>
+                <fullName>Automotive Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEACON AMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blancett</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concrete Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connectivity - Generic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connectivity - Iton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coriolis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Acquisition %2F Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dynasonics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Series</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Series Electronic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flo-tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibration Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibrator Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GALAXY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HRE%2FLCD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hedland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impeller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Oval Gear %28IOG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Turbo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managed Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ModMAG%2FM-Series</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitors %2F Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION CE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION Cellular</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION SE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preso</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ReadCenter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recordall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Control Valves %28RCV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Technical Field Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traditional Fixed Reading System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traditional Mobile Reading System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vortex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyco Tool</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>Automotive Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEACON AMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blancett</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concrete Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coriolis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Acquisition %2F Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dynasonics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Series Electronic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flo-Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibration Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibrator Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Galaxy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hedland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impeller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Oval Gear %28IOG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Turbo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ModMAG%2FM-Series</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitors %2F Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preso</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ReadCenter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recordall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Control Valves %28RCV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Technical Field Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vortex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyco Tool</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposal_Bid_Expiration_Reminder__c</picklist>
+            <values>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90 Days</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposal_Type__c</picklist>
+            <values>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Turnkey__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undecided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Win_Loss_Reason__c</picklist>
+            <values>
+                <fullName>Availability and%2For lead time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Canceled Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Features</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Utility</fullName>
+        <active>true</active>
+        <businessProcess>Badger Opportunity</businessProcess>
+        <label>Utility</label>
+        <picklistValues>
+            <picklist>Applications_of__c</picklist>
+            <values>
+                <fullName>Analytics%2FMeter Data Management Software</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>C%26I Meters</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Encoders</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fixed Network Reading Systems</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fluid Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mobile Reading System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residential Meters</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Expected_Sales_Approach__c</picklist>
+            <values>
+                <fullName>Cross-Sell</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Utility</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ForecastCategoryName</picklist>
+            <values>
+                <fullName>Best Case</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Closed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omitted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pipeline</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Advertisement - Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Advertisement - Print</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Badger Meter Salesperson %28Direct%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Catalog House %2F Internet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Email Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>External Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Public Relations</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Purchased Lists</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rep</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Automation Distributor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockwell Automation Encompass Event</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Partner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Seminar - Self</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Webinar</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Word of mouth</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Meter_Type__c</picklist>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commercial</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Residential</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Product_Solutions__c</picklist>
+            <values>
+                <fullName>BEACON AMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connectivity - Generic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Connectivity - Iton</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dynasonics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Series</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Series Electronic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GALAXY</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HRE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HRE%2FLCD</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impeller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Managed Solution</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION CE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION Cellular</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION ME</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ORION SE</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ReadCenter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Technical Field Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traditional Fixed Reading System</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Traditional Mobile Reading System</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Product__c</picklist>
+            <values>
+                <fullName>Automotive Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BEACON AMA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Blancett</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Concrete Fluid Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Coriolis</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cox</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Data Acquisition %2F Management</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dynasonics</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>E-Series Electronic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flo-Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibration Services</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Flow Dynamics Calibrator Products</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Galaxy</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>HR-E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hedland</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Impeller</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Oval Gear %28IOG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Industrial Turbo</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ModMAG%2FM-Series</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitors %2F Accessories</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Orion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Preso</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ReadCenter</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recordall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Research Control Valves %28RCV%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Services %2F Technical Field Support</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vision</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vortex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wyco Tool</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposal_Bid_Expiration_Reminder__c</picklist>
+            <values>
+                <fullName>30 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>60 Days</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>90 Days</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposal_Type__c</picklist>
+            <values>
+                <fullName>Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Quote</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RFP</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Turnkey__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Undecided</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type</picklist>
+            <values>
+                <fullName>Existing Business</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Business</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Win_Loss_Reason__c</picklist>
+            <values>
+                <fullName>Availability and%2For lead time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer Canceled Bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Features</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No bid</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Performance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Price</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Strategic Supplier</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Value</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>OPPORTUNITY.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.SITE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.CLOSE_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.AMOUNT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>OPPORTUNITY.STAGE_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Meter_Type__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Expected_Sales_Approach__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.SITE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.STAGE_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.CLOSE_DATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>OPPORTUNITY.AMOUNT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Meter_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Expected_Sales_Approach__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.STAGE_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.CLOSE_DATE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>OPPORTUNITY.AMOUNT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Meter_Type__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Expected_Sales_Approach__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>OPPORTUNITY.NAME</searchFilterFields>
+        <searchFilterFields>ACCOUNT.NAME</searchFilterFields>
+        <searchFilterFields>ACCOUNT.SITE</searchFilterFields>
+        <searchFilterFields>OPPORTUNITY.CLOSE_DATE</searchFilterFields>
+        <searchFilterFields>OPPORTUNITY.AMOUNT</searchFilterFields>
+        <searchFilterFields>OPPORTUNITY.STAGE_NAME</searchFilterFields>
+        <searchFilterFields>Meter_Type__c</searchFilterFields>
+        <searchFilterFields>Expected_Sales_Approach__c</searchFilterFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.SITE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.STAGE_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.CLOSE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OPPORTUNITY.AMOUNT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Meter_Type__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Expected_Sales_Approach__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Turnkey_Completion_Date_Invalid</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+    ISPICKVAL(Turnkey__c, &quot;No&quot;),
+    NOT(ISBLANK(Turnkey_Completion_Date__c))
+   )</errorConditionFormula>
+        <errorDisplayField>Turnkey_Completion_Date__c</errorDisplayField>
+        <errorMessage>If Turnkey = No, then Turnkey Completion Date must be blank.  Please remove this value to proceed.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Close_Opportunity</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <linkType>url</linkType>
+        <masterLabel>Close Opportunity</masterLabel>
+        <openType>replace</openType>
+        <protected>false</protected>
+        <url>/apex/OpportunityDetailOnClose?id={!Opportunity.Id}</url>
+    </webLinks>
+</CustomObject>

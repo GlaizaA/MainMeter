@@ -1,0 +1,4 @@
+The following account has been provided a customer number within Salesforce.
+
+Account Name: {!Account.Name}
+Customer #: {!Account.Customer_Number__c}

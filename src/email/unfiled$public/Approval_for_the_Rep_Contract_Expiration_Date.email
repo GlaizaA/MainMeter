@@ -1,0 +1,10 @@
+Dear {!Rep__c.OwnerFullName}
+
+Thank you for the notification. 
+
+I am happy to approve the same. Please follow the link below.
+{!01I50000000UqmD.Link}
+
+
+Thanks
+{!User.Name}

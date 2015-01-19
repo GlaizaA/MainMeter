@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Flow Instrumentation 2014-11-18</name>
+    <style>none</style>
+    <subject>Coal Power Plant Application - Dynasonics Price List Update - NEW RCV Support Team</subject>
+    <textOnly>View Web Version
+
+
+Flow Instrumentation Edition | November 18, 2014
+
+Confidential &amp; Proprietary
+
+
+Flow Measurement in Coal Power Plant
+Emission Scrubbing
+When coal is burned, it emits gases, such as sulfur oxide, carbon dioxide, nitrogen oxide, and as well as other gases and particulates. These emissions, if untreated, can cause negative effects on the environment by polluting water and air. For coal-burning power plants, it’s critical to remove harmful gases and particulates from coal-burning emissions. Not only is this important from an environmental responsibility standpoint, but also for complying with federal and state clean air regulations.
+A common method for removing, or neutralizing, harmful emissions from burning coal is known as “scrubbing” - illustrated below. Scrubbing is a process that uses a wet limestone slurry to filter and neutralize gas emissions. The limestone slurry is sprayed through nozzles into the scrubber system as coal emissions pass through the exhaust stream before being released into the atmosphere as clean gas. Byproducts of this type of scrubber system include fly ash and gypsum, both of which are extracted from the coal emissions and re-marketed for other uses, such as the manufacturing of wallboard and as a soil amendment in agriculture.
+Click to enlarge
+As with any process, you cannot manage what you cannot measure. Because the limestone slurry used in scrubbing, as well as the fly ash and gypsum byproduct slurries are naturally abrasive, measuring the circulation of these slurries can be challenging for many types of flow metering technologies.
+In this type of application, Dynasonics TFX Ultra flow meters are often ideal as they clamp on to the outside of the pipe and therefore do not come into contact with the abrasive materials. The non-intrusive, clamp-on design allows quick and low-cost installation, and eliminates worries of fluid compatibility and pressure head loss. With accuracy at ±1 percent and repeatability at ±0.5 percent of reading and a large bi-directional measuring range, the TFX Ultra ensures reliable readings at wide range of flow rates.
+Identifying Gas Meter Opportunities in this Process
+
+
+Preso Gemini cone meters are an ideal instrument for the flue gas that exits the boiler and enters the scrubber system. Preso Gemini meters combine exceptional performance, low maintenance and long life for superior value. With no internal moving parts, Preso meters require minimal maintenance and are able to withstand demanding applications, such as steam and other gases.
+Vortex RNG gas flow meters may also be used to measure the amount of total gas emissions after the scrubbing treatment process. Government regulations are increasingly requiring accurate data for emissions being released into the environment. With one of the smallest sensor struts of any product of its type, Vortex meters have exceptionally low pressure drop. Plus, similar to Preso meters, Vortex meters have no moving parts and required minimal maintenance. With Smart electronics and HART communications, the Badger Meter vortex flow meter is an excellent choice for process plants and refineries measuring gases.
+
+New RCV Valve Customer Support Team
+
+
+
+
+Our customer service support group has recently assembled a team of key contacts for supporting our Research Control Valve product line. The new team is aimed at improving the alignment of our internal operations to provide fast response and consistent points of contact for our valve customers and channel partners.
+
+
+Michelle Korn and Ryan Koepke are now primary contacts for all valve orders and inquiries with the remaining members of the customer service and support team providing backup.
+
+
+Dan Fellers, Technical Support Supervisor, remains a key contact for technical valve inquiries and escalations. We are happy to announce that Randy McAloon joined the Badger Meter team as a Valve Application Engineer on November 3. In his new role, Randy will provide valve sizing support, answers to technical questions, and troubleshooting help. Randy holds a Bachelor of Science in Mechanical Engineering and is currently working towards a Bachelor of Science in Electrical Engineering.
+
+
+If you have any questions, please contact Jennifer Hersback, Manager of Inside Technical Sales and Service.
+
+
+
+
+Documentation
+
+
+Several technical reference documents have been updated. The new documents include up-to-date specifications and photos and have been reformatted for improved usability.
+
+ModMAG M-Series
+M2000 data sheet update
+Blancett
+Positive Displacement Meter Product Data Sheet
+Dynasonics
+Doppler Ultrasonic Flow Meter, Series DFX Product Data Sheet
+
+Topics in this Issue
+
+
+- Dynasonics Price List Update
+
+- Power Plant Application
+
+- NEW RCV Support Team
+
+- Documentation Updates
+
+- Product Selection Chart
+
+- Events
+
+Updated Dynasonics Price List - Price Adjustments Made for Select Products
+
+
+Summary of updates:
+
+Price adjustments for select transducers, kits, and certain models
+Update for standard repair offering
+General updates and clarifications
+
+An in-depth summary of the price list updates will be sent separately to all contracted Dynasonics sales channel members.
+
+
+If you have any questions, email Cheryl Ades Anspach.
+
+Flow Instrumentation Selection Chart
+The new selection chart provides a high-level overview of our entire Flow Instrumentation offering. In order to help guide you and your customers to the proper product, the selection chart contains metering technology comparisons, ideal application environments, and basic performance specifications for all Flow Instrumentation products.
+Click to download
+
+Events
+
+
+Automation Fair
+
+November 19-20
+
+Anaheim, CA
+
+Booth 680
+
+
+AHR Expo
+
+January 26-28
+
+Chicago, IL
+
+Booth 1657
+
+
+Full list of events
+
+eNews Archive
+
+
+November 4, 2014
+
+October 15, 2014
+
+October 1, 2014
+
+September 16, 2014
+
+September 3, 2014
+
+August 15, 2014
+
+August 1, 2014
+
+July 15, 2014
+
+July 1, 2014
+
+
+
+
+As always, we welcome your input. Please contact us with any comments or suggestions you may have. Marketing eNews Feedback</textOnly>
+    <type>custom</type>
+</EmailTemplate>

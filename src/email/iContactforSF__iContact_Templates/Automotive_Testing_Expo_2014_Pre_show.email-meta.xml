@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Automotive Testing Expo 2014 Pre-show</name>
+    <style>none</style>
+    <subject>Let&apos;s Get Together at the Automotive Testing Expo</subject>
+    <textOnly>We would like to invite you to visit our booth at the
+Automotive Testing Expo!
+When the integrity of your product relies on high-precision test and measurement flow data, the performance of your flow meter is indispensable. Badger Meter offers flow instrumentation technology, which allows for flow measurements with unequaled precision, repeatability and rangeability.
+An industry leader in both mechanical and electronic flow metering technologies, we offer one of the broadest flow control and measurement portfolios in the industry. Simply put, Badger Meter provides technology to measure and control whatever moves through a pipe or pipeline – including water, air, steam, oil, other liquids and gases.
+We hope to see you at the show as we look forward to exploring solutions to help advance your business.
+
+
+Cox Turbine Meters    RCV Control Valves    Dynasonics Portable Flow Meters    IOG Oval Gear Meters
+
+
+
+
+
+Contact Us Today
+
+800-876-3837
+
+www.badgermeter.com
+
+
+
+
+
+October 28-30
+
+Novi, MI
+
+Register Online
+
+Booth 10026P
+
+
+
+Product Overview
+
+Brochure
+
+
+
+Click to Download
+
+
+
+
+
+
+As always, we welcome your input. Please contact us with any comments or suggestions you may have. Marketing eNews Feedback</textOnly>
+    <type>custom</type>
+</EmailTemplate>
