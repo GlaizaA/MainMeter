@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 eclipse.preferences.version=1
 endpointApiVersion=31.0
 endpointEnvironment=Sandbox
@@ -10,5 +11,35 @@ namespacePrefix=
 packageName=unpackaged
 preferToolingDeployment=true
 projectIdentifier=IDE6555214489085822462
+=======
+ExecuteAnonymousApex_code=Debug
+ExecuteAnonymousApex_profiling=Info
+ExecuteAnonymousCallout=Info
+ExecuteAnonymousDb=Info
+ExecuteAnonymousSystem=Debug
+ExecuteAnonymousValidation=Info
+ExecuteAnonymousVisualforce=Info
+ExecuteAnonymousWorkflow=Info
+RunTestApex_code=Debug
+RunTestApex_profiling=Info
+RunTestCallout=Info
+RunTestDb=Info
+RunTestSystem=Debug
+RunTestValidation=Info
+RunTestVisualforce=Info
+RunTestWorkflow=Info
+eclipse.preferences.version=1
+endpointApiVersion=31.0
+endpointEnvironment=Sandbox
+endpointServer=test.salesforce.com
+httpsProtocol=true
+ideVersion=31.0
+keependpoint=false
+metadataFormatVersion=31.0
+namespacePrefix=
+packageName=unpackaged
+preferToolingDeployment=true
+projectIdentifier=IDE-4854807035645768788
+>>>>>>> branch 'master' of https://github.com/GlaizaA/MainMeter
 readTimeout=400
 username=cloudsherpas@badgermeter.com.test
